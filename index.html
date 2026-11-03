@@ -19,6 +19,7 @@ h2{margin:0 0 .3rem;font-size:1.2rem}.soft{color:var(--soft)}.greet{background:l
 .sched{background:#FFF4C9;display:flex;flex-direction:column}.tl{position:relative;flex:1;min-height:200px;margin:.4rem 0 .4rem 2.2rem}
 .hr{position:absolute;left:0;right:0;border-top:1px dashed rgba(59,42,32,.18)}.hr span{position:absolute;left:-2.2rem;top:-.45rem;font-size:.7rem;color:var(--soft)}
 .ev{position:absolute;border-radius:12px;padding:2px 8px;font-size:.9rem;font-weight:600;overflow:hidden;border-left:6px solid;line-height:1.15}
+.ev{min-height:calc(1.15em + 6px);z-index:1}.ev .t{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}.ev.nar{font-size:.8rem;padding:2px 5px}.ev.one .t{display:block;white-space:nowrap;text-overflow:ellipsis}
 .now{position:absolute;left:-6px;right:0;border-top:3px solid #D9536A;z-index:5}.now:before{content:"";position:absolute;left:-4px;top:-7px;width:11px;height:11px;border-radius:50%;background:#D9536A}
 ul{list-style:none;margin:0;padding:0}li{margin:.28rem 0;display:flex;gap:.45rem;align-items:flex-start}
 .box{width:1rem;height:1rem;border:2px solid var(--ink);border-radius:5px;flex:none;margin-top:.12rem}
@@ -54,14 +55,15 @@ function tick(){const n=den();$('greet').textContent=(n.h<12?'Good morning':n.h<
  if(Date.now()-LOADED>3600000)location.reload()}
 function fit(){if(innerWidth<=960){document.documentElement.style.setProperty('--fs','21px');return}const r=document.documentElement;let f=Math.max(16,Math.min(24,innerHeight/39));
  const over=()=>document.body.scrollHeight>innerHeight+1||[...document.querySelectorAll('.col')].some(c=>c.scrollHeight>c.clientHeight+1)||[...document.querySelectorAll('.col>.card')].some(c=>c.scrollHeight>c.clientHeight+1);
- r.style.setProperty('--fs',f+'px');while(f>12&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}}
+ r.style.setProperty('--fs',f+'px');while(f>12&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}
+ document.querySelectorAll('.ev:not(.one) .t').forEach(t=>{const lh=parseFloat(getComputedStyle(t).lineHeight)||16;t.style.webkitLineClamp=Math.max(1,Math.floor((t.parentElement.clientHeight-4)/lh))})}
 addEventListener('resize',()=>D&&fit());
 function render(){const d=D;$('date').textContent=d.DATE;$('fun').textContent=d.FUN_NOTE;$('upd').textContent=d.UPDATED;const w=d.WEATHER;
  $('wxe').textContent=sky(w.sky);$('hl').innerHTML=esc(w.high)+' <span class="soft lo">/ '+esc(w.low)+'</span>';$('sky').textContent=w.sky;$('pw').textContent='💧 '+w.precip+' · 💨 '+w.wind;$('dress').textContent=w.dress;
  const S=d.DAY_START,E=d.DAY_END,pct=h=>(h-S)/(E-S)*100;let h='';for(let i=S;i<=E;i++)h+=`<div class="hr" style="top:${pct(i)}%"><span>${(i%12||12)+(i<12?'a':'p')}</span></div>`;
  const ev=[...d.EVENTS].sort((a,b)=>a.start-b.start),lanes=[];ev.forEach(e=>{let l=lanes.findIndex(x=>x<=e.start);if(l<0){l=lanes.length;lanes.push(0)}lanes[l]=e.end;e._l=l});
  ev.forEach((e,i)=>{const n=ev.filter(o=>o.start<e.end&&o.end>e.start).reduce((m,o)=>Math.max(m,o._l+1),1),c=i%6;
-  h+=`<div class="ev" style="top:${pct(e.start)}%;height:calc(${pct(e.end)-pct(e.start)}% - 2px);left:${e._l/n*100}%;width:calc(${100/n}% - 4px);background:${CARDS[c]};border-color:${ACC[c]}">${emo(e.title)} ${hlab(e.start)} · ${esc(e.title)}</div>`});
+  h+=`<div style="top:${pct(e.start)}%;height:calc(${pct(e.end)-pct(e.start)}% - 2px);left:${e._l/n*100}%;width:calc(${100/n}% - 4px);background:${CARDS[c]};border-color:${ACC[c]}" class="ev${(e.end-e.start<1)?' one':''}${n>1?' nar':''}"><span class="t">${n>1?'':emo(e.title)+' '}${hlab(e.start)} · ${esc(e.title)}</span></div>`});
  $('tl').innerHTML=h+'<div class="now" id="nowl"></div>';
  $('checks').innerHTML=d.CHECKLISTS.map((c,i)=>`<div class="card" style="background:${CARDS[(i*3)%6]}"><h2>📝 ${esc(c.title)}</h2><ul>${c.items.map(x=>`<li><span class="box"></span>${esc(x)}</li>`).join('')}</ul></div>`).join('');
  $('todos').innerHTML=d.TODOS.map(t=>`<li><span class="pill">${esc(t.lead)}</span><div><b>${esc(t.title)}</b><div class="soft sm">${esc(t.detail||'')}</div></div></li>`).join('');
