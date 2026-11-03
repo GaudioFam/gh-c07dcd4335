@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Gaudio Home">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#FFF9F2">
+<link rel="apple-touch-icon" href="icon.png"><title>Gaudio Home</title>
+<style>
+:root{--ink:#3B2A20;--soft:#7A5E4C}*{box-sizing:border-box}
+body{margin:0;background:#FFF9F2;color:var(--ink);font-family:ui-rounded,'SF Pro Rounded','Nunito',system-ui;padding:max(14px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}
+.card{border-radius:22px;padding:11px 16px;box-shadow:0 3px 0 rgba(59,42,32,.07)}
+.top{display:grid;grid-template-columns:1.4fr 1fr 1.6fr;gap:12px;margin-bottom:12px}
+.main{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:12px}.col{display:flex;flex-direction:column;gap:12px}
+h2{margin:0 0 6px;font-size:17px}.soft{color:var(--soft)}.greet{background:linear-gradient(135deg,#FFD9B8,#FFE8D6 60%,#FFF1C7)}
+.g1{font-size:22px;font-weight:800}.date{font-size:20px;font-weight:700;margin:2px 0}.stamp{font-size:11px;color:var(--soft)}
+.wx{background:#DFF1F7;display:flex;gap:10px;align-items:center}.wx .e{font-size:40px}.hl{font-size:30px;font-weight:800}
+.dress{background:#FDE2E4;white-space:pre-line;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.sched{background:#FFF4C9}.tl{position:relative;height:460px;margin-left:34px}
+.hr{position:absolute;left:0;right:0;border-top:1px dashed rgba(59,42,32,.18)}.hr span{position:absolute;left:-34px;top:-8px;font-size:11px;color:var(--soft)}
+.ev{position:absolute;border-radius:12px;padding:4px 8px;font-size:13px;font-weight:600;overflow:hidden;border-left:6px solid}
+.now{position:absolute;left:-6px;right:0;border-top:3px solid #D9536A;z-index:5}.now:before{content:"";position:absolute;left:-4px;top:-7px;width:11px;height:11px;border-radius:50%;background:#D9536A}
+ul{list-style:none;margin:0;padding:0}li{margin:5px 0;display:flex;gap:8px;align-items:flex-start}
+.box{width:18px;height:18px;border:2px solid var(--ink);border-radius:5px;flex:none;margin-top:1px}
+.pill{background:#fff;border-radius:999px;padding:1px 8px;font-size:12px;font-weight:700;flex:none;white-space:nowrap}
+.foot{text-align:center;margin-top:12px;color:var(--soft);font-size:13px}
+#banner{display:none;background:#D9536A;color:#fff;font-weight:800;border-radius:14px;padding:8px 14px;margin-bottom:10px;text-align:center}
+#off{display:none;font-size:11px;color:#D9536A}
+@media(max-width:960px){.top{grid-template-columns:1fr 1fr}.greet{grid-column:1/-1}.main{grid-template-columns:1fr 1fr}.main>.col:first-child{grid-column:1/-1}}
+@media(max-width:600px){.top,.main{grid-template-columns:1fr}}
+</style></head><body>
+<div id="banner"></div>
+<div class="top">
+<div class="card greet"><div class="g1" id="greet"></div><div class="soft" id="season"></div><div class="date" id="date"></div><div id="fun"></div><div class="stamp"><span id="upd"></span> <span id="off"></span></div></div>
+<div class="card wx"><div class="e" id="wxe"></div><div><div class="hl" id="hl"></div><div id="sky"></div><div class="soft" style="font-size:13px" id="pw"></div></div></div>
+<div class="card dress"><h2>👗 Dress the girls</h2><div id="dress"></div></div></div>
+<div class="main"><div class="col"><div class="card sched"><h2>📅 Today</h2><div class="tl" id="tl"></div></div></div>
+<div class="col" id="checks"></div>
+<div class="col"><div class="card" style="background:#E6F4EA"><h2>✅ To-dos</h2><ul id="todos"></ul></div><div class="card" style="background:#E8E6FA"><h2>🔜 Coming up</h2><ul id="coming"></ul></div></div></div>
+<div class="foot">🏡 Gaudio Home · new each morning 💛</div>
+<script>
+const CARDS=["#FFE8D6","#E6F4EA","#FFF4C9","#E8E6FA","#FDE2E4","#DFF1F7"],ACC=["#E07A3F","#3F9E6B","#C99A06","#6B5BD6","#D9536A","#2F8FB3"];
+const LOADED=Date.now();let D=null,lastOk=null;
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function den(){const p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);return{iso:`${p.year}-${p.month}-${p.day}`,m:+p.month,d:+p.day,h:+p.hour,min:+p.minute}}
+function hlab(h){const hh=Math.floor(h),m=Math.round((h-hh)*60),ap=hh<12?'AM':'PM',x=hh%12||12;return x+(m?':'+String(m).padStart(2,'0'):'')+' '+ap}
+function emo(t){t=t.toLowerCase();for(const[k,e]of[[/ballet/,'🩰'],[/vet|dog/,'🐶'],[/church|bible/,'⛪'],[/grocery/,'🛒'],[/tire|car\b/,'🚗'],[/date night/,'💕'],[/haircut/,'💈'],[/birthday/,'🎂'],[/steve/,'👨']])if(k.test(t))return e;return'✨'}
+function sky(s){s=s.toLowerCase();return/snow/.test(s)?'🌨️':/rain|shower/.test(s)?'🌧️':/storm/.test(s)?'⛈️':/partly/.test(s)?'⛅':/cloud|overcast/.test(s)?'☁️':'☀️'}
+function season(m,d){if(m==12)return'🎄 Merry season';if(m<=2)return'❄️ Snowy days';if(m<=5)return'🌷 Spring is here';if(m<=8)return'☀️ Summer fun';if(m==10&&d>=15)return'🎃 Spooky season';if(m==11&&d>=20)return'🦃 Thankful season';return'🍂 Cozy fall days'}
+function tick(){const n=den();$('greet').textContent=(n.h<12?'Good morning':n.h<17?'Good afternoon':'Good evening')+', Gaudios!';$('season').textContent=season(n.m,n.d);
+ const nl=$('nowl');if(D&&nl){const t=n.h+n.min/60;if(t>=D.DAY_START&&t<=D.DAY_END){nl.style.display='';nl.style.top=((t-D.DAY_START)/(D.DAY_END-D.DAY_START)*100)+'%'}else nl.style.display='none'}
+ const stale=D&&D.DATE_ISO!==n.iso&&(n.h>5||(n.h==5&&n.min>=30));$('banner').style.display=stale?'block':'none';$('banner').textContent='⚠️ This is old info ('+(D?D.DATE:'')+'). Refreshing…';
+ if(stale&&Date.now()-LOADED>120000&&!sessionStorage.getItem('rl'+n.iso)){sessionStorage.setItem('rl'+n.iso,1);location.reload()}
+ if(Date.now()-LOADED>3600000)location.reload()}
+function render(){const d=D;$('date').textContent=d.DATE;$('fun').textContent=d.FUN_NOTE;$('upd').textContent=d.UPDATED;const w=d.WEATHER;
+ $('wxe').textContent=sky(w.sky);$('hl').innerHTML=esc(w.high)+' <span class="soft" style="font-size:20px">/ '+esc(w.low)+'</span>';$('sky').textContent=w.sky;$('pw').textContent='💧 '+w.precip+' · 💨 '+w.wind;$('dress').textContent=w.dress;
+ const S=d.DAY_START,E=d.DAY_END,pct=h=>(h-S)/(E-S)*100;let h='';for(let i=S;i<=E;i++)h+=`<div class="hr" style="top:${pct(i)}%"><span>${(i%12||12)+(i<12?'a':'p')}</span></div>`;
+ const ev=[...d.EVENTS].sort((a,b)=>a.start-b.start),lanes=[];ev.forEach(e=>{let l=lanes.findIndex(x=>x<=e.start);if(l<0){l=lanes.length;lanes.push(0)}lanes[l]=e.end;e._l=l});
+ ev.forEach((e,i)=>{const n=ev.filter(o=>o.start<e.end&&o.end>e.start).reduce((m,o)=>Math.max(m,o._l+1),1),c=i%6;
+  h+=`<div class="ev" style="top:${pct(e.start)}%;height:calc(${pct(e.end)-pct(e.start)}% - 2px);left:${e._l/n*100}%;width:calc(${100/n}% - 4px);background:${CARDS[c]};border-color:${ACC[c]}">${emo(e.title)} ${hlab(e.start)} · ${esc(e.title)}</div>`});
+ $('tl').innerHTML=h+'<div class="now" id="nowl"></div>';
+ $('checks').innerHTML=d.CHECKLISTS.map((c,i)=>`<div class="card" style="background:${CARDS[(i*3)%6]}"><h2>📝 ${esc(c.title)}</h2><ul>${c.items.map(x=>`<li><span class="box"></span>${esc(x)}</li>`).join('')}</ul></div>`).join('');
+ $('todos').innerHTML=d.TODOS.map(t=>`<li><span class="pill">${esc(t.lead)}</span><div><b>${esc(t.title)}</b><div class="soft" style="font-size:13px">${esc(t.detail||'')}</div></div></li>`).join('');
+ $('coming').innerHTML=d.COMING_UP.map(t=>`<li><span class="pill">${esc(t.lead)}</span><div>${esc(t.title)}</div></li>`).join('');tick()}
+let busy=false;async function load(){if(busy)return;busy=true;try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;const j=await r.json();const s=JSON.stringify(j);
+ if(s!==localStorage.getItem('gh_data')||!D){D=j;localStorage.setItem('gh_data',s);render()}lastOk=new Date();localStorage.setItem('gh_ok',lastOk.toISOString());$('off').style.display='none'}
+ catch(e){if(!D){try{D=JSON.parse(localStorage.getItem('gh_data'));D&&render()}catch(_){}}const t=localStorage.getItem('gh_ok');$('off').style.display='inline';$('off').textContent='· offline, last updated '+(t?new Date(t).toLocaleTimeString('en-US',{timeZone:'America/Denver',hour:'numeric',minute:'2-digit'})+' MT':'never')}
+ finally{busy=false;tick()}}
+load();setInterval(load,600000);setInterval(tick,60000);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')load()});addEventListener('pageshow',load);addEventListener('focus',load);
+</script></body></html>
