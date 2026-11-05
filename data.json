@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-05",
   "DATE": "Thursday, November 5",
-  "UPDATED": "Updated Thu Nov 5, 5:10 AM MT",
+  "UPDATED": "Updated Thu Nov 5, 7:49 AM MT",
   "FUN_NOTE": "🩰 Ballet day! Twirl on, Carmella!",
   "WEATHER": {
     "high": "53°",
@@ -14,10 +14,26 @@
   "DAY_START": 9,
   "DAY_END": 20,
   "EVENTS": [
-    {"start": 9.5, "end": 11.5, "title": "Cleaners (Flor & Maholi)"},
-    {"start": 10.333, "end": 11.333, "title": "Carmella Ballet"},
-    {"start": 15.5, "end": 16.25, "title": "Steve busy"},
-    {"start": 17, "end": 19, "title": "Marsha & John for dinner"}
+    {
+      "start": 9.5,
+      "end": 11.5,
+      "title": "Cleaners (Flor & Maholi)"
+    },
+    {
+      "start": 10.333,
+      "end": 11.333,
+      "title": "Carmella Ballet"
+    },
+    {
+      "start": 15.5,
+      "end": 16.25,
+      "title": "Steve busy"
+    },
+    {
+      "start": 17,
+      "end": 19,
+      "title": "Marsha & John for dinner"
+    }
   ],
   "CHECKLISTS": [
     {
@@ -44,6 +60,11 @@
   "TODOS": [
     {
       "lead": "Today",
+      "title": "Harmons after ballet",
+      "detail": "Fall salad produce for Marsha & John dinner (Alejandra's shepherd's pie)."
+    },
+    {
+      "lead": "Today",
       "title": "Pack jacket & FedEx drop",
       "detail": "Cat return label is in her email; drop the coat after ballet today."
     },
@@ -59,6 +80,9 @@
     }
   ],
   "COMING_UP": [
-    {"lead": "Fri", "title": "🎉 All day: District Equities anniversary"}
+    {
+      "lead": "Fri",
+      "title": "🎉 All day: District Equities anniversary"
+    }
   ]
 }
