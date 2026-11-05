@@ -1,1 +1,64 @@
-{"DATE_ISO": "2026-11-04", "DATE": "Wednesday, November 4", "UPDATED": "Updated Wed Nov 4, 5:03 AM MT", "FUN_NOTE": "🐾 Charlie & Asher: rainy day! Please wipe our paws.", "WEATHER": {"high": "50°", "low": "36°", "sky": "Mostly cloudy, rain likely", "precip": "60%, wettest 11 AM–2 PM", "wind": "Calm, NW under 5 mph", "dress": "Carmella: raincoat, warm layers, hat and rain boots\nGenevieve: fleece footie, hat, rain cover on the carrier"}, "DAY_START": 8, "DAY_END": 20, "EVENTS": [{"start": 8, "end": 9, "title": "Steve busy"}, {"start": 9.5, "end": 10.5, "title": "Steve's haircut with Fletcher"}, {"start": 10.333, "end": 12.333, "title": "Bible study"}], "CHECKLISTS": [{"title": "Today's chores", "items": ["Probiotics for Jordan & Steve", "Laundry day"]}, {"title": "Out the door: Bible study 10 AM", "items": ["Carmella sits on the potty", "Snacks for Carmella", "Jordan's Bible study notes", "Change of clothes for both girls", "Genevieve's carrier", "Raincoat & boots; rain cover for carrier"]}], "TODOS": [{"lead": "Thu", "title": "Jacket return & art supplies", "detail": "FedEx label is in Cat's email; drop it Thu after ballet. Get art supplies for Carmella."}, {"lead": "This wk", "title": "Find a new babysitter", "detail": "Follow up on Kelene's sitter recommendations for Mon/Fri mornings and date night."}], "COMING_UP": [{"lead": "Thu", "title": "🧹 9:30–11:30 AM: Cleaners (Flor & Maholi)"}, {"lead": "Thu", "title": "🍽️ 5–7 PM: Marsha & John over for dinner"}, {"lead": "Fri", "title": "🎉 All day: District Equities anniversary"}]}
+{
+  "DATE_ISO": "2026-11-05",
+  "DATE": "Thursday, November 5",
+  "UPDATED": "Updated Thu Nov 5, 5:10 AM MT",
+  "FUN_NOTE": "🩰 Ballet day! Twirl on, Carmella!",
+  "WEATHER": {
+    "high": "53°",
+    "low": "38°",
+    "sky": "Mostly cloudy",
+    "precip": "None expected",
+    "wind": "Calm",
+    "dress": "Carmella: cozy layers & light jacket (cool day)\nGenevieve: fleece footie, hat; carrier blanket"
+  },
+  "DAY_START": 9,
+  "DAY_END": 20,
+  "EVENTS": [
+    {"start": 9.5, "end": 11.5, "title": "Cleaners (Flor & Maholi)"},
+    {"start": 10.333, "end": 11.333, "title": "Carmella Ballet"},
+    {"start": 15.5, "end": 16.25, "title": "Steve busy"},
+    {"start": 17, "end": 19, "title": "Marsha & John for dinner"}
+  ],
+  "CHECKLISTS": [
+    {
+      "title": "Today's chores",
+      "items": [
+        "Probiotics for Jordan & Steve",
+        "Strip the sheets",
+        "Set out the laundry",
+        "Pick up the toys"
+      ]
+    },
+    {
+      "title": "Out the door: ballet",
+      "items": [
+        "Carmella sits on the potty",
+        "Ballet clothes, slippers & hair up",
+        "Water and a snack",
+        "Genevieve's carrier",
+        "Change of clothes for Carmella",
+        "Jacket & layers (cool, dry day)"
+      ]
+    }
+  ],
+  "TODOS": [
+    {
+      "lead": "Today",
+      "title": "Pack jacket & FedEx drop",
+      "detail": "Cat return label is in her email; drop the coat after ballet today."
+    },
+    {
+      "lead": "This wk",
+      "title": "Find a new babysitter",
+      "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."
+    },
+    {
+      "lead": "Soon",
+      "title": "Carmella art supplies",
+      "detail": "Still need new art supplies for Carmella — pick some up this week."
+    }
+  ],
+  "COMING_UP": [
+    {"lead": "Fri", "title": "🎉 All day: District Equities anniversary"}
+  ]
+}
