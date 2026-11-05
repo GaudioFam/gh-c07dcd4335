@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-05",
   "DATE": "Thursday, November 5",
-  "UPDATED": "Updated Thu Nov 5, 7:49 AM MT",
+  "UPDATED": "Updated Thu Nov 5, 9:15 AM MT",
   "FUN_NOTE": "🩰 Ballet day! Twirl on, Carmella!",
   "WEATHER": {
     "high": "53°",
@@ -14,6 +14,11 @@
   "DAY_START": 9,
   "DAY_END": 20,
   "EVENTS": [
+    {
+      "start": 9,
+      "end": 9.833,
+      "title": "Steve busy"
+    },
     {
       "start": 9.5,
       "end": 11.5,
