@@ -1,43 +1,28 @@
 {
-  "DATE_ISO": "2026-11-05",
-  "DATE": "Thursday, November 5",
-  "UPDATED": "Updated Thu Nov 5, 3:05 PM MT",
-  "FUN_NOTE": "🩰 Ballet day! Twirl on, Carmella!",
+  "DATE_ISO": "2026-11-06",
+  "DATE": "Friday, November 6",
+  "UPDATED": "Updated Fri Nov 6, 5:11 AM MT",
+  "FUN_NOTE": "🎉 Cheers to District Equities anniversary!",
   "WEATHER": {
     "high": "53°",
     "low": "38°",
-    "sky": "Mostly cloudy",
+    "sky": "Sunny",
     "precip": "None expected",
-    "wind": "Calm",
-    "dress": "Carmella: cozy layers & light jacket (cool day)\nGenevieve: fleece footie, hat; carrier blanket"
+    "wind": "Light 2–6 mph",
+    "dress": "Carmella: cozy layers & light jacket (crisp day)\nGenevieve: fleece footie, hat; carrier blanket"
   },
-  "DAY_START": 9,
-  "DAY_END": 20,
+  "DAY_START": 8,
+  "DAY_END": 18,
   "EVENTS": [
     {
+      "start": 8,
+      "end": 8.75,
+      "title": "Steve busy"
+    },
+    {
       "start": 9,
-      "end": 9.833,
-      "title": "Steve busy"
-    },
-    {
-      "start": 9.5,
-      "end": 11.5,
-      "title": "Cleaners (Flor & Maholi)"
-    },
-    {
-      "start": 10.333,
-      "end": 11.333,
-      "title": "Carmella Ballet"
-    },
-    {
-      "start": 15.5,
-      "end": 16.25,
-      "title": "Steve busy"
-    },
-    {
-      "start": 17,
-      "end": 19,
-      "title": "Marsha & John for dinner"
+      "end": 10,
+      "title": "District Equities anniversary"
     }
   ],
   "CHECKLISTS": [
@@ -45,34 +30,11 @@
       "title": "Today's chores",
       "items": [
         "Probiotics for Jordan & Steve",
-        "Strip the sheets",
-        "Set out the laundry",
-        "Pick up the toys"
-      ]
-    },
-    {
-      "title": "Out the door: ballet",
-      "items": [
-        "Carmella sits on the potty",
-        "Ballet clothes, slippers & hair up",
-        "Water and a snack",
-        "Genevieve's carrier",
-        "Change of clothes for Carmella",
-        "Jacket & layers (cool, dry day)"
+        "Order groceries for Alejandra & weekend"
       ]
     }
   ],
   "TODOS": [
-    {
-      "lead": "Today",
-      "title": "Harmons after ballet",
-      "detail": "Fall salad produce for Marsha & John dinner (Alejandra's shepherd's pie)."
-    },
-    {
-      "lead": "Today",
-      "title": "Pack jacket & FedEx drop",
-      "detail": "Cat return label is in her email; drop the coat after ballet today."
-    },
     {
       "lead": "This wk",
       "title": "Find a new babysitter",
@@ -86,16 +48,16 @@
   ],
   "COMING_UP": [
     {
-      "lead": "Fri",
-      "title": "🎉 All day: District Equities anniversary"
+      "lead": "Sat",
+      "title": "🏔️ 2:30–8 PM: Park City open house & dinner"
     },
     {
       "lead": "Sat",
-      "title": "🏔️ 2:30–8 PM: Park City open house, playground & dinner"
+      "title": "🐶 Simparica Trio for Charlie & Asher"
     },
     {
       "lead": "Sun",
-      "title": "⛪ 9:30–11 AM: Church (leave by 9)"
+      "title": "🎁 Cody's birthday — get/wrap present"
     }
   ]
 }
