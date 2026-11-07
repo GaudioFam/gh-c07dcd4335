@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-07",
   "DATE": "Saturday, November 7",
-  "UPDATED": "Updated Sat Nov 7, 9:05 AM MT",
+  "UPDATED": "Updated Sat Nov 7, 1:08 PM MT",
   "FUN_NOTE": "\ud83d\udc3e Charlie & Asher say: woof, have fun in Park City!",
   "WEATHER": {
     "high": "58\u00b0",
@@ -17,6 +17,11 @@
     {
       "start": 9,
       "end": 9.25,
+      "title": "Steve busy"
+    },
+    {
+      "start": 13,
+      "end": 13.5,
       "title": "Steve busy"
     },
     {
