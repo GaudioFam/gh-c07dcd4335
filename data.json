@@ -1,45 +1,60 @@
 {
-  "DATE_ISO": "2026-11-06",
-  "DATE": "Friday, November 6",
-  "UPDATED": "Updated Fri Nov 6, 3:05 PM MT",
-  "FUN_NOTE": "🎉 Cheers to District Equities anniversary!",
+  "DATE_ISO": "2026-11-07",
+  "DATE": "Saturday, November 7",
+  "UPDATED": "Updated Sat Nov 7, 5:07 AM MT",
+  "FUN_NOTE": "🐾 Charlie & Asher say: woof, have fun in Park City!",
   "WEATHER": {
-    "high": "53°",
+    "high": "58°",
     "low": "38°",
-    "sky": "Sunny",
+    "sky": "Mostly sunny",
     "precip": "None expected",
-    "wind": "Light 2–6 mph",
-    "dress": "Carmella: cozy layers & light jacket (crisp day)\nGenevieve: fleece footie, hat; carrier blanket"
+    "wind": "Light NW ~2 mph",
+    "dress": "Carmella: layers; warm coat, hat & mittens for Park City\nGenevieve: fleece footie & hat; extra warm layer in carrier"
   },
   "DAY_START": 8,
-  "DAY_END": 18,
+  "DAY_END": 20,
   "EVENTS": [
     {
-      "start": 8,
-      "end": 8.75,
-      "title": "Steve busy"
-    },
-    {
       "start": 9,
-      "end": 10,
-      "title": "District Equities anniversary"
+      "end": 9.25,
+      "title": "Steve busy"
     },
     {
-      "start": 12,
-      "end": 12.5,
-      "title": "Steve busy"
+      "start": 14.5,
+      "end": 20,
+      "title": "Park City: open house, park & dinner"
+    },
+    {
+      "start": 16,
+      "end": 17,
+      "title": "Oak Rim tour (Park City)"
     }
   ],
   "CHECKLISTS": [
     {
       "title": "Today's chores",
       "items": [
-        "Probiotics for Jordan & Steve",
-        "Order groceries for Alejandra & weekend"
+        "Probiotics for Jordan & Steve"
+      ]
+    },
+    {
+      "title": "Park City out the door (2:30)",
+      "items": [
+        "Carmella on the potty",
+        "Car snacks & water",
+        "Change of clothes for both girls",
+        "Genevieve's carrier",
+        "Blanket",
+        "Warm coats, hats & mittens"
       ]
     }
   ],
   "TODOS": [
+    {
+      "lead": "All day",
+      "title": "Simparica Trio for Charlie & Asher",
+      "detail": "Monthly flea/tick chew for both dogs today."
+    },
     {
       "lead": "This wk",
       "title": "Find a new babysitter",
@@ -53,28 +68,12 @@
   ],
   "COMING_UP": [
     {
-      "lead": "Sat",
-      "title": "🏔️ 2:30–8 PM: Park City open house & dinner"
-    },
-    {
-      "lead": "Sat",
-      "title": "🏠 4–5 PM: Oak Rim tour (Park City)"
-    },
-    {
-      "lead": "Sat",
-      "title": "🐶 Simparica Trio for Charlie & Asher"
-    },
-    {
-      "lead": "Sun",
-      "title": "⛪ 9:30–11 AM: Church"
-    },
-    {
       "lead": "Sun",
       "title": "⛸️ 5–7:30 PM: Disney On Ice (Delta Center)"
     },
     {
       "lead": "Sun",
-      "title": "🎁 Cody's birthday — get/wrap present"
+      "title": "🎁 All day: Cody's birthday — get/wrap present"
     }
   ]
 }
