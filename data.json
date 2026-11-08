@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-08",
   "DATE": "Sunday, November 8",
-  "UPDATED": "Updated Sun Nov 8, 5:02 AM MT",
+  "UPDATED": "Updated Sun Nov 8, 1:03 PM MT",
   "FUN_NOTE": "⛸️ Ice, ice, baby! Disney On Ice tonight!",
   "WEATHER": {
     "high": "64°",
@@ -74,6 +74,10 @@
     {
       "lead": "Mon",
       "title": "👨 9 PM: Steve's call with Ash (A&G)"
+    },
+    {
+      "lead": "Tue",
+      "title": "🏠 3:30 PM: 2126 Twilight Ct (Park City)"
     },
     {
       "lead": "Wed",
