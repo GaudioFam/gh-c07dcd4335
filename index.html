@@ -26,11 +26,13 @@ ul{list-style:none;margin:0;padding:0}li{margin:.28rem 0;display:flex;gap:.45rem
 .pill{background:#fff;border-radius:999px;padding:1px .5rem;font-size:.8rem;font-weight:700;flex:none;white-space:nowrap;margin-top:.1rem}
 .foot{text-align:center;margin-top:8px;color:var(--soft);font-size:.7rem;flex:none}
 #banner{display:none;background:#D9536A;color:#fff;font-weight:800;border-radius:14px;padding:8px 14px;margin-bottom:10px;text-align:center;flex:none}
+#welcome{display:none;background:linear-gradient(135deg,#FFD9B8,#FDE2E4 55%,#E8E6FA);border-radius:22px;padding:.45rem 1rem;margin-bottom:12px;text-align:center;flex:none;box-shadow:0 3px 0 rgba(59,42,32,.07)}#welcome b{font-size:1.45rem;font-weight:900}#welcome .soft{font-size:.85rem;font-weight:700}
 #off{display:none;font-size:.7rem;color:#D9536A}
 @media(max-width:960px){body{overflow:auto;height:auto}.top{grid-template-columns:1fr 1fr}.greet{grid-column:1/-1}.main{grid-template-columns:1fr 1fr}.main>.col:first-child{grid-column:1/-1}.tl{min-height:420px}}
 @media(max-width:600px){.top,.main{grid-template-columns:1fr}}
 </style></head><body>
 <div id="banner"></div>
+<div id="welcome"></div>
 <div class="top">
 <div class="card greet"><div class="g1" id="greet"></div><div class="soft" id="season"></div><div class="date" id="date"></div><div id="fun"></div><div class="stamp"><span id="upd"></span> <span id="off"></span></div></div>
 <div class="card wx"><div class="e" id="wxe"></div><div><div class="hl" id="hl"></div><div id="sky"></div><div class="soft sm" id="pw"></div></div></div>
@@ -50,9 +52,13 @@ function sky(s){s=s.toLowerCase();return/snow/.test(s)?'🌨️':/rain|shower/.t
 function season(m,d){if(m==12)return'🎄 Merry season';if(m<=2)return'❄️ Snowy days';if(m<=5)return'🌷 Spring is here';if(m<=8)return'☀️ Summer fun';if(m==10&&d>=15)return'🎃 Spooky season';if(m==11&&d>=20)return'🦃 Thankful season';return'🍂 Cozy fall days'}
 function tick(){const n=den();$('greet').textContent=(n.h<12?'Good morning':n.h<17?'Good afternoon':'Good evening')+', Gaudios!';$('season').textContent=season(n.m,n.d);
  const nl=$('nowl');if(D&&nl){const t=n.h+n.min/60;if(t>=D.DAY_START&&t<=D.DAY_END){nl.style.display='';nl.style.top=((t-D.DAY_START)/(D.DAY_END-D.DAY_START)*100)+'%'}else nl.style.display='none'}
+ guests(n);
  const stale=D&&D.DATE_ISO!==n.iso&&(n.h>5||(n.h==5&&n.min>=30));$('banner').style.display=stale?'block':'none';$('banner').textContent='⚠️ This is old info ('+(D?D.DATE:'')+'). Refreshing…';
  if(stale&&Date.now()-LOADED>120000&&!sessionStorage.getItem('rl'+n.iso)){sessionStorage.setItem('rl'+n.iso,1);location.reload()}
  if(Date.now()-LOADED>3600000)location.reload()}
+function guests(n){const w=$('welcome');const g=(D&&D.GUESTS||[]).filter(x=>x.from<=n.iso&&n.iso<=x.to);if(!g.length){if(w.style.display!=='none'){w.style.display='none';D&&fit()}return}
+ const nm=g.map(x=>x.name),names=nm.length>1?nm.slice(0,-1).join(', ')+' & '+nm[nm.length-1]:nm[0],notes=g.map(x=>x.from===n.iso&&x.arrive?x.arrive:x.to===n.iso?'Last day together, soak it up!':x.note||'').filter(Boolean).join(' · ');
+ const html='<b>💛 Welcome, '+esc(names)+'!</b> <span class="soft">We\'re so happy you\'re here'+(notes?' · '+esc(notes):'')+'</span>';if(w.innerHTML!==html||w.style.display!=='block'){w.innerHTML=html;w.style.display='block';fit()}}
 function fit(){if(innerWidth<=960){document.documentElement.style.setProperty('--fs','21px');return}const r=document.documentElement;let f=Math.max(16,Math.min(24,innerHeight/39));
  const over=()=>document.body.scrollHeight>innerHeight+1||[...document.querySelectorAll('.col')].some(c=>c.scrollHeight>c.clientHeight+1)||[...document.querySelectorAll('.col>.card')].some(c=>c.scrollHeight>c.clientHeight+1);
  r.style.setProperty('--fs',f+'px');while(f>12&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}

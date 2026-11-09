@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-09",
   "DATE": "Monday, November 9",
-  "UPDATED": "Updated Mon Nov 9, 5:10 AM MT",
+  "UPDATED": "Updated Mon Nov 9, 4:40 PM MT",
   "FUN_NOTE": "🐕 Charlie & Asher: it's Monday, zoomies are mandatory!",
   "WEATHER": {
     "high": "62°",
@@ -14,8 +14,16 @@
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
-    {"start": 8.5, "end": 9.5, "title": "Steve: busy"},
-    {"start": 21, "end": 21.5, "title": "Steve: busy"}
+    {
+      "start": 8.5,
+      "end": 9.5,
+      "title": "Steve: busy"
+    },
+    {
+      "start": 21,
+      "end": 21.5,
+      "title": "Steve: busy"
+    }
   ],
   "CHECKLISTS": [
     {
@@ -27,13 +35,33 @@
     }
   ],
   "TODOS": [
-    {"lead": "Today", "title": "Costco order", "detail": "Place a Costco order, due today. Olive oil was flagged for this run."},
-    {"lead": "Sat", "title": "Cody's birthday present", "detail": "Get and wrap a present for Cody's party Sat Nov 14 at 1175 Mercedes Way."},
-    {"lead": "This wk", "title": "Find a new babysitter", "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."}
+    {
+      "lead": "This wk",
+      "title": "Find a new babysitter",
+      "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."
+    }
   ],
   "COMING_UP": [
-    {"lead": "Tue", "title": "🏠 3:30 PM: 2126 Twilight Ct (Park City)"},
-    {"lead": "Wed", "title": "✈️ 11:29 AM: Steve flies to Phoenix (to Fri)"},
-    {"lead": "Wed", "title": "👵 2:30 PM: Momma Pummill lands (stays to Sat)"}
+    {
+      "lead": "Tue",
+      "title": "🏠 3:30 PM: 2126 Twilight Ct (Park City)"
+    },
+    {
+      "lead": "Wed",
+      "title": "✈️ 11:29 AM: Steve flies to Phoenix (to Fri)"
+    },
+    {
+      "lead": "Wed",
+      "title": "👵 2:30 PM: Momma Pummill lands (stays to Sat)"
+    }
+  ],
+  "GUESTS": [
+    {
+      "name": "Momma Pummill",
+      "from": "2026-11-11",
+      "to": "2026-11-14",
+      "arrive": "Landing at 2:30 PM today",
+      "note": "Here through Saturday"
+    }
   ]
 }
