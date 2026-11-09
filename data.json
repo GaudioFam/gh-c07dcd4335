@@ -1,11 +1,11 @@
 {
   "DATE_ISO": "2026-11-08",
   "DATE": "Sunday, November 8",
-  "UPDATED": "Updated Sun Nov 8, 1:03 PM MT",
-  "FUN_NOTE": "⛸️ Ice, ice, baby! Disney On Ice tonight!",
+  "UPDATED": "Updated Sun Nov 8, 9:15 PM MT",
+  "FUN_NOTE": "\u26f8\ufe0f Ice, ice, baby! Disney On Ice tonight!",
   "WEATHER": {
-    "high": "64°",
-    "low": "42°",
+    "high": "64\u00b0",
+    "low": "42\u00b0",
     "sky": "Mostly sunny",
     "precip": "None expected",
     "wind": "Light S ~2 mph",
@@ -55,6 +55,11 @@
   ],
   "TODOS": [
     {
+      "lead": "Tomorrow",
+      "title": "Costco order",
+      "detail": "Place a Costco order. Olive oil was flagged for this run."
+    },
+    {
       "lead": "Today",
       "title": "Cody's birthday present",
       "detail": "It's Cody's birthday today: get and wrap the present."
@@ -63,29 +68,24 @@
       "lead": "This wk",
       "title": "Find a new babysitter",
       "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."
-    },
-    {
-      "lead": "Soon",
-      "title": "Carmella art supplies",
-      "detail": "Still need new art supplies for Carmella — pick some up this week."
     }
   ],
   "COMING_UP": [
     {
       "lead": "Mon",
-      "title": "👨 9 PM: Steve's call with Ash (A&G)"
+      "title": "\ud83d\udc68 9 PM: Steve's call with Ash (A&G)"
     },
     {
       "lead": "Tue",
-      "title": "🏠 3:30 PM: 2126 Twilight Ct (Park City)"
+      "title": "\ud83c\udfe0 3:30 PM: 2126 Twilight Ct (Park City)"
     },
     {
       "lead": "Wed",
-      "title": "✈️ 11:29 AM: Steve flies to Phoenix (to Fri)"
+      "title": "\u2708\ufe0f 11:29 AM: Steve flies to Phoenix (to Fri)"
     },
     {
       "lead": "Wed",
-      "title": "👵 2:30 PM: Momma Pummill lands (stays to Sat)"
+      "title": "\ud83d\udc75 2:30 PM: Momma Pummill lands (stays to Sat)"
     }
   ]
 }
