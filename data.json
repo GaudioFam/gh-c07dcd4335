@@ -1,91 +1,39 @@
 {
-  "DATE_ISO": "2026-11-08",
-  "DATE": "Sunday, November 8",
-  "UPDATED": "Updated Sun Nov 8, 9:15 PM MT",
-  "FUN_NOTE": "\u26f8\ufe0f Ice, ice, baby! Disney On Ice tonight!",
+  "DATE_ISO": "2026-11-09",
+  "DATE": "Monday, November 9",
+  "UPDATED": "Updated Mon Nov 9, 5:10 AM MT",
+  "FUN_NOTE": "🐕 Charlie & Asher: it's Monday, zoomies are mandatory!",
   "WEATHER": {
-    "high": "64\u00b0",
-    "low": "42\u00b0",
-    "sky": "Mostly sunny",
+    "high": "62°",
+    "low": "39°",
+    "sky": "Partly cloudy",
     "precip": "None expected",
-    "wind": "Light S ~2 mph",
-    "dress": "Carmella: warm coat & hat for Park City; layers for ice show\nGenevieve: fleece footie & hat; blanket in the carrier"
+    "wind": "Light SE→W ~2-5 mph",
+    "dress": "Carmella: jacket & hat for the chilly AM; sweater by noon\nGenevieve: fleece footie & hat; light blanket outside"
   },
   "DAY_START": 8,
-  "DAY_END": 20,
+  "DAY_END": 22,
   "EVENTS": [
-    {
-      "start": 9.5,
-      "end": 11,
-      "title": "Church (Park City)"
-    },
-    {
-      "start": 17,
-      "end": 19.5,
-      "title": "Disney On Ice (Delta Center)"
-    }
+    {"start": 8.5, "end": 9.5, "title": "Steve: busy"},
+    {"start": 21, "end": 21.5, "title": "Steve: busy"}
   ],
   "CHECKLISTS": [
     {
       "title": "Today's chores",
       "items": [
         "Probiotics for Jordan & Steve",
-        "Take the meats out for Alejandra"
-      ]
-    },
-    {
-      "title": "Church out the door (9:00)",
-      "items": [
-        "Carmella on the potty",
-        "Car snacks",
-        "Change of clothes for both girls",
-        "Genevieve's carrier",
-        "Blanket",
-        "Warmer clothes (colder up there)"
-      ]
-    },
-    {
-      "title": "Disney On Ice (5 PM)",
-      "items": [
-        "Tickets on phone (Sec 18, Row 23)",
-        "Snacks & water",
-        "Warm layers for the arena"
+        "Trash out (pickup is Tuesday)"
       ]
     }
   ],
   "TODOS": [
-    {
-      "lead": "Tomorrow",
-      "title": "Costco order",
-      "detail": "Place a Costco order. Olive oil was flagged for this run."
-    },
-    {
-      "lead": "Today",
-      "title": "Cody's birthday present",
-      "detail": "It's Cody's birthday today: get and wrap the present."
-    },
-    {
-      "lead": "This wk",
-      "title": "Find a new babysitter",
-      "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."
-    }
+    {"lead": "Today", "title": "Costco order", "detail": "Place a Costco order, due today. Olive oil was flagged for this run."},
+    {"lead": "Sat", "title": "Cody's birthday present", "detail": "Get and wrap a present for Cody's party Sat Nov 14 at 1175 Mercedes Way."},
+    {"lead": "This wk", "title": "Find a new babysitter", "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."}
   ],
   "COMING_UP": [
-    {
-      "lead": "Mon",
-      "title": "\ud83d\udc68 9 PM: Steve's call with Ash (A&G)"
-    },
-    {
-      "lead": "Tue",
-      "title": "\ud83c\udfe0 3:30 PM: 2126 Twilight Ct (Park City)"
-    },
-    {
-      "lead": "Wed",
-      "title": "\u2708\ufe0f 11:29 AM: Steve flies to Phoenix (to Fri)"
-    },
-    {
-      "lead": "Wed",
-      "title": "\ud83d\udc75 2:30 PM: Momma Pummill lands (stays to Sat)"
-    }
+    {"lead": "Tue", "title": "🏠 3:30 PM: 2126 Twilight Ct (Park City)"},
+    {"lead": "Wed", "title": "✈️ 11:29 AM: Steve flies to Phoenix (to Fri)"},
+    {"lead": "Wed", "title": "👵 2:30 PM: Momma Pummill lands (stays to Sat)"}
   ]
 }
