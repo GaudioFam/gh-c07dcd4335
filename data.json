@@ -1,50 +1,74 @@
 {
-  "DATE_ISO": "2026-11-09",
-  "DATE": "Monday, November 9",
-  "UPDATED": "Updated Mon Nov 9, 4:40 PM MT",
-  "FUN_NOTE": "🐕 Charlie & Asher: it's Monday, zoomies are mandatory!",
+  "DATE_ISO": "2026-11-10",
+  "DATE": "Tuesday, November 10",
+  "UPDATED": "Updated Tue Nov 10, 6:47 AM MT",
+  "FUN_NOTE": "🌞 Sunny Tuesday: the dogs claimed the warm porch",
   "WEATHER": {
-    "high": "62°",
-    "low": "39°",
-    "sky": "Partly cloudy",
+    "high": "60°",
+    "low": "42°",
+    "sky": "Sunny",
     "precip": "None expected",
-    "wind": "Light SE→W ~2-5 mph",
+    "wind": "Light NNW ~3-5 mph",
     "dress": "Carmella: jacket & hat for the chilly AM; sweater by noon\nGenevieve: fleece footie & hat; light blanket outside"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 8.5,
-      "end": 9.5,
+      "start": 10.75,
+      "end": 11.25,
       "title": "Steve: busy"
     },
     {
-      "start": 21,
-      "end": 21.5,
+      "start": 12.5,
+      "end": 13,
       "title": "Steve: busy"
+    },
+    {
+      "start": 15,
+      "end": 17,
+      "title": "Carmella with Marsha"
+    },
+    {
+      "start": 15.5,
+      "end": 16,
+      "title": "2126 Twilight Ct (Park City)"
+    },
+    {
+      "start": 16.25,
+      "end": 16.75,
+      "title": "5880 Trailside"
     }
   ],
   "CHECKLISTS": [
     {
       "title": "Today's chores",
       "items": [
-        "Probiotics for Jordan & Steve",
-        "Trash out (pickup is Tuesday)"
+        "Probiotics for Jordan & Steve"
       ]
     }
   ],
   "TODOS": [
     {
-      "lead": "This wk",
-      "title": "Find a new babysitter",
-      "detail": "Follow up on Kelene's sitter recommendations for mornings and date night."
+      "lead": "Today",
+      "title": "Text Laura's 3 sitter contacts",
+      "detail": "Sammy, KK, and Alexis — mornings and a date night."
+    },
+    {
+      "lead": "Today",
+      "title": "Call upholsterers",
+      "detail": "Jack's, Wardell, Upholstery West, and Zion for ottoman pricing."
+    },
+    {
+      "lead": "Today",
+      "title": "Ask Tey Tey about the ottoman",
+      "detail": "She has upholstery experience; maybe do the ottoman together."
     }
   ],
   "COMING_UP": [
     {
-      "lead": "Tue",
-      "title": "🏠 3:30 PM: 2126 Twilight Ct (Park City)"
+      "lead": "Wed",
+      "title": "⛪ 10:20 AM: Bible study"
     },
     {
       "lead": "Wed",
@@ -53,14 +77,22 @@
     {
       "lead": "Wed",
       "title": "👵 2:30 PM: Tey Tey lands (stays to Sat)"
+    },
+    {
+      "lead": "Wed",
+      "title": "📦 Swing set curbside delivery"
+    },
+    {
+      "lead": "Fri",
+      "title": "✈️ 12:24 PM: Steve lands from Phoenix"
     }
   ],
   "GUESTS": [
     {
-      "name":"Tey Tey",
+      "name": "Tey Tey",
       "from": "2026-11-11",
       "to": "2026-11-14",
-      "arrive": "Landing at 2:30 PM today",
+      "arrive": "Landing at 2:30 PM Wed",
       "note": "Here through Saturday"
     }
   ]
