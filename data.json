@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-11",
   "DATE": "Wednesday, November 11",
-  "UPDATED": "Updated Wed Nov 11, 7:00 AM MT",
+  "UPDATED": "Updated Wed Nov 11, 1:00 PM MT",
   "FUN_NOTE": "👵 Tey Tey touches down today: hug countdown is on!",
   "WEATHER": {
     "high": "60°",
@@ -27,7 +27,7 @@
     {
       "start": 14.5,
       "end": 15.5,
-      "title": "Pick up Tey Tey at SLC"
+      "title": "Tey Tey lands (Uber home from SLC)"
     }
   ],
   "CHECKLISTS": [
@@ -37,7 +37,7 @@
         "Probiotics for Jordan & Steve",
         "Laundry day: wash, dry, fold",
         "Change the basement bed for Tey Tey (AM)",
-        "Tidy up before airport pickup"
+        "Tidy up before Tey Tey arrives"
       ]
     },
     {
@@ -72,6 +72,10 @@
     {
       "lead": "Sat",
       "title": "✈️ 10:00 AM: Tey Tey flies home (leave 8:30)"
+    },
+    {
+      "lead": "Sat",
+      "title": "Cody Knapp birthday party, 4:00 PM"
     }
   ],
   "GUESTS": [
