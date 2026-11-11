@@ -58,7 +58,7 @@ function tick(){const n=den();$('greet').textContent=(n.h<12?'Good morning':n.h<
  if(Date.now()-LOADED>3600000)location.reload()}
 function guests(n){const w=$('welcome');const g=(D&&D.GUESTS||[]).filter(x=>x.from<=n.iso&&n.iso<=x.to);if(!g.length){if(w.style.display!=='none'){w.style.display='none';D&&fit()}return}
  const nm=g.map(x=>x.name),names=nm.length>1?nm.slice(0,-1).join(', ')+' & '+nm[nm.length-1]:nm[0],notes=g.map(x=>x.from===n.iso&&x.arrive?x.arrive:x.to===n.iso?'Last day together, soak it up!':x.note||'').filter(Boolean).join(' · ');
- const html='<b>💛 Welcome, '+esc(names)+'!</b> <span class="soft">We\'re so happy you\'re here'+(notes?' · '+esc(notes):'')+'</span>';if(w.innerHTML!==html||w.style.display!=='block'){w.innerHTML=html;w.style.display='block';fit()}}
+ const html='<b>💛 Welcome, '+esc(names)+'! 💛</b>';if(w.innerHTML!==html||w.style.display!=='block'){w.innerHTML=html;w.style.display='block';fit()}}
 function fit(){if(innerWidth<=960){document.documentElement.style.setProperty('--fs','21px');return}const r=document.documentElement;let f=Math.max(16,Math.min(24,innerHeight/39));
  const over=()=>document.body.scrollHeight>innerHeight+1||[...document.querySelectorAll('.col')].some(c=>c.scrollHeight>c.clientHeight+1)||[...document.querySelectorAll('.col>.card')].some(c=>c.scrollHeight>c.clientHeight+1);
  r.style.setProperty('--fs',f+'px');while(f>12&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}
