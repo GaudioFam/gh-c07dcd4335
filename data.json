@@ -1,43 +1,38 @@
 {
-  "DATE_ISO": "2026-11-10",
-  "DATE": "Tuesday, November 10",
-  "UPDATED": "Updated Tue Nov 10, 6:47 AM MT",
-  "FUN_NOTE": "🌞 Sunny Tuesday: the dogs claimed the warm porch",
+  "DATE_ISO": "2026-11-11",
+  "DATE": "Wednesday, November 11",
+  "UPDATED": "Updated Wed Nov 11, 4:41 AM MT",
+  "FUN_NOTE": "👵 Tey Tey touches down today: hug countdown is on!",
   "WEATHER": {
     "high": "60°",
-    "low": "42°",
+    "low": "41°",
     "sky": "Sunny",
     "precip": "None expected",
-    "wind": "Light NNW ~3-5 mph",
-    "dress": "Carmella: jacket & hat for the chilly AM; sweater by noon\nGenevieve: fleece footie & hat; light blanket outside"
+    "wind": "Light NNW ~2-5 mph",
+    "dress": "Carmella: jacket & hat for the chilly AM; light layers later\nGenevieve: fleece footie & hat; blanket for outside"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 10.75,
-      "end": 11.25,
+      "start": 9.5,
+      "end": 10,
       "title": "Steve: busy"
     },
     {
-      "start": 12.5,
-      "end": 13,
-      "title": "Steve: busy"
+      "start": 10.33,
+      "end": 12.33,
+      "title": "Bible study"
     },
     {
-      "start": 15,
-      "end": 17,
-      "title": "Carmella with Marsha"
+      "start": 11.5,
+      "end": 13.25,
+      "title": "Steve flies to Phoenix"
     },
     {
-      "start": 15.5,
-      "end": 16,
-      "title": "2126 Twilight Ct (Park City)"
-    },
-    {
-      "start": 16.25,
-      "end": 16.75,
-      "title": "5880 Trailside"
+      "start": 14.5,
+      "end": 15.5,
+      "title": "Pick up Tey Tey at SLC"
     }
   ],
   "CHECKLISTS": [
@@ -45,50 +40,52 @@
       "title": "Today's chores",
       "items": [
         "Probiotics for Jordan & Steve",
-        "Change the basement bed for Tey Tey",
-        "Pick up the basement bedroom",
-        "Finish Steve's laundry",
-        "Pack Steve for Phoenix"
+        "Laundry day: wash, dry, fold",
+        "Change the basement bed for Tey Tey (AM)",
+        "Tidy up before airport pickup"
+      ]
+    },
+    {
+      "title": "Bible study, leave 10:00 AM",
+      "items": [
+        "Carmella sits on the potty",
+        "Snacks for Carmella",
+        "Jordan's Bible study notes",
+        "Change of clothes for both girls",
+        "Genevieve's carrier",
+        "Weather-appropriate clothes"
       ]
     }
   ],
   "TODOS": [
     {
       "lead": "Today",
-      "title": "Text Laura's 3 sitter contacts",
-      "detail": "Sammy, KK, and Alexis — mornings and a date night."
+      "title": "Swing set delivery (curbside)",
+      "detail": "DIY kit arrives today; may come in several boxes."
     },
     {
       "lead": "Today",
-      "title": "Call upholsterers",
-      "detail": "Jack's, Wardell, Upholstery West, and Zion for ottoman pricing."
+      "title": "Find a new babysitter",
+      "detail": "Waiting to hear back from Ms. Sammy, Miss KK, and Miss Alexis."
     },
     {
-      "lead": "Today",
+      "lead": "Tey Tey",
       "title": "Ask Tey Tey about the ottoman",
-      "detail": "She has upholstery experience; maybe do the ottoman together."
+      "detail": "She has upholstery experience; maybe do it together."
     }
   ],
   "COMING_UP": [
     {
-      "lead": "Wed",
-      "title": "⛪ 10:20 AM: Bible study"
-    },
-    {
-      "lead": "Wed",
-      "title": "✈️ 11:29 AM: Steve flies to Phoenix (to Fri)"
-    },
-    {
-      "lead": "Wed",
-      "title": "👵 2:30 PM: Tey Tey lands (stays to Sat)"
-    },
-    {
-      "lead": "Wed",
-      "title": "📦 Swing set curbside delivery"
+      "lead": "Thu",
+      "title": "⛳ 12:00 PM: Steve golfs at Longbow (Phoenix)"
     },
     {
       "lead": "Fri",
       "title": "✈️ 12:24 PM: Steve lands from Phoenix"
+    },
+    {
+      "lead": "Sat",
+      "title": "✈️ 10:00 AM: Tey Tey flies home (leave 8:30)"
     }
   ],
   "GUESTS": [
@@ -96,7 +93,7 @@
       "name": "Tey Tey",
       "from": "2026-11-11",
       "to": "2026-11-14",
-      "arrive": "Landing at 2:30 PM Wed",
+      "arrive": "Landing at 2:30 PM today",
       "note": "Here through Saturday"
     }
   ]
