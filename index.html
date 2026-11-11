@@ -11,7 +11,7 @@ html{font-size:var(--fs)}html,body{height:100%}
 body{margin:0;background:#FFF9F2;color:var(--ink);font-family:ui-rounded,'SF Pro Rounded','Nunito',system-ui;padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));display:flex;flex-direction:column;overflow:hidden;line-height:1.25}
 .card{border-radius:22px;padding:.5rem .8rem;box-shadow:0 3px 0 rgba(59,42,32,.07);min-height:0}
 .top{display:grid;grid-template-columns:1.35fr 1.1fr 1.5fr;gap:12px;margin-bottom:12px;flex:none}
-.main{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:12px;flex:1;min-height:0}.col{display:flex;flex-direction:column;gap:12px;min-height:0}.col>.card{flex:1 1 auto}
+.main{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:12px;flex:1;min-height:0}.col{display:flex;flex-direction:column;gap:12px;min-height:0}.col>.card{flex:1 1 auto;overflow:auto}
 h2{margin:0 0 .3rem;font-size:1.2rem}.soft{color:var(--soft)}.greet{background:linear-gradient(135deg,#FFD9B8,#FFE8D6 60%,#FFF1C7)}
 .g1{font-size:1.55rem;font-weight:800}.date{font-size:1.3rem;font-weight:700;margin:2px 0}.stamp{font-size:.7rem;color:var(--soft)}
 .wx{background:#DFF1F7;display:flex;gap:.6rem;align-items:center}.wx .e{font-size:2.6rem}.hl{font-size:2.5rem;font-weight:800;line-height:1.05;white-space:nowrap}.lo{font-size:1.4rem}.sm{font-size:.8rem}
@@ -61,7 +61,7 @@ function guests(n){const w=$('welcome');const g=(D&&D.GUESTS||[]).filter(x=>x.fr
  const html='<b>💛 Welcome, '+esc(names)+'! 💛</b>';if(w.innerHTML!==html||w.style.display!=='block'){w.innerHTML=html;w.style.display='block';fit()}}
 function fit(){if(innerWidth<=960){document.documentElement.style.setProperty('--fs','21px');return}const r=document.documentElement;let f=Math.max(16,Math.min(24,innerHeight/39));
  const over=()=>document.body.scrollHeight>innerHeight+1||[...document.querySelectorAll('.col')].some(c=>c.scrollHeight>c.clientHeight+1)||[...document.querySelectorAll('.col>.card')].some(c=>c.scrollHeight>c.clientHeight+1);
- r.style.setProperty('--fs',f+'px');while(f>12&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}
+ r.style.setProperty('--fs',f+'px');while(f>18&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}
  document.querySelectorAll('.ev:not(.one) .t').forEach(t=>{const lh=parseFloat(getComputedStyle(t).lineHeight)||16;t.style.webkitLineClamp=Math.max(1,Math.floor((t.parentElement.clientHeight-4)/lh))})}
 addEventListener('resize',()=>D&&fit());
 function render(){const d=D;$('date').textContent=d.DATE;$('fun').textContent=d.FUN_NOTE;$('upd').textContent=d.UPDATED;const w=d.WEATHER;
