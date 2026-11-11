@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-11",
   "DATE": "Wednesday, November 11",
-  "UPDATED": "Updated Wed Nov 11, 4:41 AM MT",
+  "UPDATED": "Updated Wed Nov 11, 7:00 AM MT",
   "FUN_NOTE": "👵 Tey Tey touches down today: hug countdown is on!",
   "WEATHER": {
     "high": "60°",
@@ -14,11 +14,6 @@
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
-    {
-      "start": 9.5,
-      "end": 10,
-      "title": "Steve: busy"
-    },
     {
       "start": 10.33,
       "end": 12.33,
@@ -67,18 +62,9 @@
       "lead": "Today",
       "title": "Find a new babysitter",
       "detail": "Waiting to hear back from Ms. Sammy, Miss KK, and Miss Alexis."
-    },
-    {
-      "lead": "Tey Tey",
-      "title": "Ask Tey Tey about the ottoman",
-      "detail": "She has upholstery experience; maybe do it together."
     }
   ],
   "COMING_UP": [
-    {
-      "lead": "Thu",
-      "title": "⛳ 12:00 PM: Steve golfs at Longbow (Phoenix)"
-    },
     {
       "lead": "Fri",
       "title": "✈️ 12:24 PM: Steve lands from Phoenix"
