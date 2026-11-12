@@ -1,77 +1,49 @@
 {
-  "DATE_ISO": "2026-11-11",
-  "DATE": "Wednesday, November 11",
-  "UPDATED": "Updated Wed Nov 11, 1:00 PM MT",
-  "FUN_NOTE": "👵 Tey Tey touches down today: hug countdown is on!",
+  "DATE_ISO": "2026-11-12",
+  "DATE": "Thursday, November 12",
+  "UPDATED": "Updated Thu Nov 12, 4:50 AM MT",
+  "FUN_NOTE": "🐾 Charlie & Asher say Tey Tey = extra belly rubs!",
   "WEATHER": {
-    "high": "60°",
-    "low": "41°",
+    "high": "61°",
+    "low": "42°",
     "sky": "Sunny",
     "precip": "None expected",
-    "wind": "Light NNW ~2-5 mph",
+    "wind": "Light N ~2-5 mph",
     "dress": "Carmella: jacket & hat for the chilly AM; light layers later\nGenevieve: fleece footie & hat; blanket for outside"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
-    {
-      "start": 10.33,
-      "end": 12.33,
-      "title": "Bible study"
-    },
-    {
-      "start": 11.5,
-      "end": 13.25,
-      "title": "Steve flies to Phoenix"
-    },
-    {
-      "start": 14.5,
-      "end": 15.5,
-      "title": "Tey Tey lands (Uber home from SLC)"
-    }
+    {"start": 9.5, "end": 11.5, "title": "Cleaners (Flor & Maholi)"},
+    {"start": 10.33, "end": 11.33, "title": "Carmella Ballet"}
   ],
   "CHECKLISTS": [
-    {
-      "title": "Today's chores",
-      "items": [
-        "Probiotics for Jordan & Steve",
-        "Tidy up before Tey Tey arrives"
-      ]
-    }
+    {"title": "Today's chores", "items": [
+      "Probiotics for Jordan & Steve",
+      "Go to Whole Foods",
+      "Strip the sheets",
+      "Set out the laundry",
+      "Pick up the toys"
+    ]},
+    {"title": "Ballet", "items": [
+      "Carmella sits on the potty",
+      "Leotard, tights, slippers & hair up",
+      "Water and a snack",
+      "Genevieve's carrier",
+      "Change of clothes for Carmella",
+      "Weather-appropriate clothes"
+    ]}
   ],
   "TODOS": [
-    {
-      "lead": "Today",
-      "title": "Swing set delivery (curbside)",
-      "detail": "DIY kit arrives today; may come in several boxes."
-    },
-    {
-      "lead": "Today",
-      "title": "Find a new babysitter",
-      "detail": "Waiting to hear back from Ms. Sammy, Miss KK, and Miss Alexis."
-    }
+    {"lead": "Today", "title": "Find a new babysitter", "detail": "Waiting to hear back from Ms. Sammy, Miss KK, and Miss Alexis."},
+    {"lead": "Today", "title": "Carmella's new art supplies", "detail": "Still on the list; pick some up when you can."}
   ],
   "COMING_UP": [
-    {
-      "lead": "Fri",
-      "title": "✈️ 12:24 PM: Steve lands from Phoenix"
-    },
-    {
-      "lead": "Sat",
-      "title": "✈️ 10:00 AM: Tey Tey flies home (leave 8:30)"
-    },
-    {
-      "lead": "Sat",
-      "title": "Cody Knapp birthday party, 4:00 PM"
-    }
+    {"lead": "Fri", "title": "✈️ 12:24 PM: Steve lands from Phoenix"},
+    {"lead": "Sat", "title": "✈️ 10:00 AM: Tey Tey flies home (leave 8:30)"},
+    {"lead": "Sat", "title": "Cody Knapp birthday party, 4:00 PM"}
   ],
   "GUESTS": [
-    {
-      "name": "Tey Tey",
-      "from": "2026-11-11",
-      "to": "2026-11-14",
-      "arrive": "Landing at 2:30 PM today",
-      "note": "Here through Saturday"
-    }
+    {"name": "Tey Tey", "from": "2026-11-11", "to": "2026-11-14", "note": "Here through Saturday"}
   ]
 }
