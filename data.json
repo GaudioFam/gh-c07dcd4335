@@ -1,31 +1,45 @@
 {
-  "DATE_ISO": "2026-11-13",
-  "DATE": "Friday, November 13",
-  "UPDATED": "Updated Fri Nov 13, 4:55 AM MT",
-  "FUN_NOTE": "🍂 Fun fact: toddlers think puddles are free spa days!",
+  "DATE_ISO": "2026-11-14",
+  "DATE": "Saturday, November 14",
+  "UPDATED": "Updated Sat Nov 14, 4:48 AM MT",
+  "FUN_NOTE": "🎉 Charlie & Asher say: save cake for Cody's party!",
   "WEATHER": {
-    "high": "60°",
-    "low": "46°",
-    "sky": "Cloudy",
-    "precip": "Light showers possible this evening",
-    "wind": "SSE ~5-9 mph",
-    "dress": "Carmella: jacket, hat & boots in case of drizzle\nGenevieve: fleece footie & hat; rain cover for stroller"
+    "high": "51°",
+    "low": "39°",
+    "sky": "Overcast with rain/drizzle",
+    "precip": "Rain & drizzle likely until ~4 PM, then dry",
+    "wind": "S ~5-10 mph",
+    "dress": "Carmella: rain jacket, boots & warm layers\nGenevieve: fleece footie, hat; rain cover"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 12.4,
+      "start": 8.5,
+      "end": 9.25,
+      "title": "✈️ Airport drop-off: Tey Tey (flies 10 AM)"
+    },
+    {
+      "start": 11,
       "end": 13,
-      "title": "✈️ Steve lands from Phoenix 12:24 PM"
+      "title": "Steve: pick up 1/2 beef"
+    },
+    {
+      "start": 14,
+      "end": 19,
+      "title": "Steve: Molly's workspace cutover"
+    },
+    {
+      "start": 16,
+      "end": 19,
+      "title": "🎂 Cody Knapp birthday party"
     }
   ],
   "CHECKLISTS": [
     {
       "title": "Today's chores",
       "items": [
-        "Probiotics for Jordan & Steve",
-        "Place grocery order for Alejandra & weekend"
+        "Probiotics for Jordan & Steve"
       ]
     }
   ],
@@ -33,12 +47,7 @@
     {
       "lead": "Today",
       "title": "Find a new babysitter",
-      "detail": "Waiting to hear back from Ms. Sammy, Miss KK, and Miss Alexis."
-    },
-    {
-      "lead": "Nov 19",
-      "title": "Childcare for hair appointment",
-      "detail": "Asked Marsha (Gaga) to watch the girls 1:45–4:45 PM; waiting on her reply."
+      "detail": "Messaged Laura's 3 picks Nov 10; waiting to hear back from them."
     },
     {
       "lead": "Today",
@@ -46,26 +55,13 @@
       "detail": "Still on the list; pick some up when you can."
     }
   ],
-  "COMING_UP": [
-    {
-      "lead": "Sat",
-      "title": "✈️ 10:00 AM: Tey Tey flies home (leave 8:30)"
-    },
-    {
-      "lead": "Sat",
-      "title": "11:00 AM: Pick up 1/2 beef"
-    },
-    {
-      "lead": "Sat",
-      "title": "Cody Knapp birthday party, 4:00 PM"
-    }
-  ],
+  "COMING_UP": [],
   "GUESTS": [
     {
       "name": "Tey Tey",
       "from": "2026-11-11",
       "to": "2026-11-14",
-      "note": "Here through Saturday"
+      "note": "Flies home today, 10:00 AM"
     }
   ]
 }
