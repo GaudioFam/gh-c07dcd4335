@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-15",
   "DATE": "Sunday, November 15",
-  "UPDATED": "Updated Sun Nov 15, 4:45 AM MT",
+  "UPDATED": "Updated Sun Nov 15, 7:40 AM MT",
   "FUN_NOTE": "🦃 Turkey week is coming: Carmella's practicing gobbles!",
   "WEATHER": {
     "high": "54°",
@@ -45,22 +45,9 @@
       "lead": "Today",
       "title": "Find a new babysitter",
       "detail": "Messaged Laura's 3 picks Nov 10; Alexis visits Mon 3:30 PM. Waiting on the others."
-    },
-    {
-      "lead": "Today",
-      "title": "Carmella's new art supplies",
-      "detail": "Still on the list; pick some up when you can."
     }
   ],
   "COMING_UP": [
-    {
-      "lead": "Mon",
-      "title": "11 AM Steve: Molly's/MoeGo sync"
-    },
-    {
-      "lead": "Mon",
-      "title": "1 PM Steve: meeting (busy)"
-    },
     {
       "lead": "Mon",
       "title": "3:30 PM Alexis visit (sitter meet & greet)"
