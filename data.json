@@ -1,45 +1,42 @@
 {
-  "DATE_ISO": "2026-11-14",
-  "DATE": "Saturday, November 14",
-  "UPDATED": "Updated Sat Nov 14, 4:48 AM MT",
-  "FUN_NOTE": "🎉 Charlie & Asher say: save cake for Cody's party!",
+  "DATE_ISO": "2026-11-15",
+  "DATE": "Sunday, November 15",
+  "UPDATED": "Updated Sun Nov 15, 4:45 AM MT",
+  "FUN_NOTE": "🦃 Turkey week is coming: Carmella's practicing gobbles!",
   "WEATHER": {
-    "high": "51°",
-    "low": "39°",
-    "sky": "Overcast with rain/drizzle",
-    "precip": "Rain & drizzle likely until ~4 PM, then dry",
-    "wind": "S ~5-10 mph",
-    "dress": "Carmella: rain jacket, boots & warm layers\nGenevieve: fleece footie, hat; rain cover"
+    "high": "54°",
+    "low": "37°",
+    "sky": "Partly cloudy, sunny breaks",
+    "precip": "Dry all day (under 15% chance)",
+    "wind": "S ~3-8 mph",
+    "dress": "Carmella: coat, hat & warm layers (colder in PC)\nGenevieve: fleece footie, hat, blanket in carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 8.5,
-      "end": 9.25,
-      "title": "✈️ Airport drop-off: Tey Tey (flies 10 AM)"
-    },
-    {
-      "start": 11,
-      "end": 13,
-      "title": "Steve: pick up 1/2 beef"
-    },
-    {
-      "start": 14,
-      "end": 19,
-      "title": "Steve: Molly's workspace cutover"
-    },
-    {
-      "start": 16,
-      "end": 19,
-      "title": "🎂 Cody Knapp birthday party"
+      "start": 9.5,
+      "end": 11,
+      "title": "Church (Park City)"
     }
   ],
   "CHECKLISTS": [
     {
       "title": "Today's chores",
       "items": [
-        "Probiotics for Jordan & Steve"
+        "Probiotics for Jordan & Steve",
+        "Take the meats out for Alejandra (morning)"
+      ]
+    },
+    {
+      "title": "Church: out the door 9:00 AM",
+      "items": [
+        "Carmella sits on the potty",
+        "Car snacks",
+        "Change of clothes for both girls",
+        "Genevieve's carrier",
+        "A blanket",
+        "Warmer clothes (colder in Park City)"
       ]
     }
   ],
@@ -47,7 +44,7 @@
     {
       "lead": "Today",
       "title": "Find a new babysitter",
-      "detail": "Messaged Laura's 3 picks Nov 10; waiting to hear back from them."
+      "detail": "Messaged Laura's 3 picks Nov 10; Alexis visits Mon 3:30 PM. Waiting on the others."
     },
     {
       "lead": "Today",
@@ -55,13 +52,19 @@
       "detail": "Still on the list; pick some up when you can."
     }
   ],
-  "COMING_UP": [],
-  "GUESTS": [
+  "COMING_UP": [
     {
-      "name": "Tey Tey",
-      "from": "2026-11-11",
-      "to": "2026-11-14",
-      "note": "Flies home today, 10:00 AM"
+      "lead": "Mon",
+      "title": "11 AM Steve: Molly's/MoeGo sync"
+    },
+    {
+      "lead": "Mon",
+      "title": "1 PM Steve: meeting (busy)"
+    },
+    {
+      "lead": "Mon",
+      "title": "3:30 PM Alexis visit (sitter meet & greet)"
     }
-  ]
+  ],
+  "GUESTS": []
 }
