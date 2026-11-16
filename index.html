@@ -25,12 +25,16 @@ ul{list-style:none;margin:0;padding:0}li{margin:.28rem 0;display:flex;gap:.45rem
 .box{width:1rem;height:1rem;border:2px solid var(--ink);border-radius:5px;flex:none;margin-top:.12rem}
 .pill{background:#fff;border-radius:999px;padding:1px .5rem;font-size:.8rem;font-weight:700;flex:none;white-space:nowrap;margin-top:.1rem}
 .foot{text-align:center;margin-top:8px;color:var(--soft);font-size:.7rem;flex:none}
+#steveEve{display:none;background:#C62828;color:#fff!important;font-weight:800;font-size:30px;line-height:1.25;border-radius:16px;padding:12px 18px;margin-bottom:10px;text-align:center;flex:none;width:100%;box-sizing:border-box}
+#steveEve *{color:#fff!important}
+@media(max-width:600px){#steveEve{font-size:28px}}
 #banner{display:none;background:#D9536A;color:#fff;font-weight:800;border-radius:14px;padding:8px 14px;margin-bottom:10px;text-align:center;flex:none}
 #welcome{display:none;background:linear-gradient(135deg,#FFD9B8,#FDE2E4 55%,#E8E6FA);border-radius:22px;padding:.45rem 1rem;margin-bottom:12px;text-align:center;flex:none;box-shadow:0 3px 0 rgba(59,42,32,.07)}#welcome b{font-size:1.45rem;font-weight:900}#welcome .soft{font-size:.85rem;font-weight:700}
 #off{display:none;font-size:.7rem;color:#D9536A}
 @media(max-width:960px){body{overflow:auto;height:auto}.top{grid-template-columns:1fr 1fr}.greet{grid-column:1/-1}.main{grid-template-columns:1fr 1fr}.main>.col:first-child{grid-column:1/-1}.tl{min-height:420px}}
 @media(max-width:600px){.top,.main{grid-template-columns:1fr}}
 </style></head><body>
+<div id="steveEve" role="status"></div>
 <div id="banner"></div>
 <div id="welcome"></div>
 <div class="top">
@@ -45,14 +49,24 @@ ul{list-style:none;margin:0;padding:0}li{margin:.28rem 0;display:flex;gap:.45rem
 const CARDS=["#FFE8D6","#E6F4EA","#FFF4C9","#E8E6FA","#FDE2E4","#DFF1F7"],ACC=["#E07A3F","#3F9E6B","#C99A06","#6B5BD6","#D9536A","#2F8FB3"];
 const LOADED=Date.now();let D=null,lastOk=null;
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function den(){const p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);return{iso:`${p.year}-${p.month}-${p.day}`,m:+p.month,d:+p.day,h:+p.hour,min:+p.minute}}
+const STEVE_EVE_DEFAULT=[
+ "🚫🍪 Kitchen's closed, Steve! Charlie & Asher are guarding the fridge.",
+ "🍽️ Steve, the snack shop has closed for the night!",
+ "🌙 Lights out in the kitchen, Steve! See you at breakfast.",
+ "🐶 Charlie & Asher say: paws off the pantry, Steve — kitchen's closed!",
+ "🔒 The fridge is off-duty, Steve. Tomorrow's treats will still be there!",
+ "🌟 Kitchen's clocked out, Steve! The couch is calling, not the cookies.",
+ "🍿 Movie night is a yes, Steve — a kitchen raid is a no. Closed till morning!"
+];
+function den(){const p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',weekday:'short',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);const wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);return{iso:`${p.year}-${p.month}-${p.day}`,m:+p.month,d:+p.day,h:+p.hour,min:+p.minute,wd:wd<0?0:wd}}
+function kitchen(n){const el=$('steveEve');if(!el)return;const on=n.h>=18;const lines=(D&&Array.isArray(D.STEVE_EVENING_BANNER)&&D.STEVE_EVENING_BANNER.length)?D.STEVE_EVENING_BANNER:STEVE_EVE_DEFAULT;const msg=lines[((n.wd%lines.length)+lines.length)%lines.length];const next=on?'block':'none';if(el.style.display!==next||(on&&el.textContent!==msg)){el.textContent=on?msg:'';el.style.display=next;if(D)fit()}}
 function hlab(h){const hh=Math.floor(h),m=Math.round((h-hh)*60),ap=hh<12?'AM':'PM',x=hh%12||12;return x+(m?':'+String(m).padStart(2,'0'):'')+' '+ap}
 function emo(t){t=t.toLowerCase();for(const[k,e]of[[/ballet/,'🩰'],[/vet|dog/,'🐶'],[/church|bible/,'⛪'],[/grocery/,'🛒'],[/tire|car\b/,'🚗'],[/date night/,'💕'],[/haircut/,'💈'],[/birthday/,'🎂'],[/steve/,'👨']])if(k.test(t))return e;return'✨'}
 function sky(s){s=s.toLowerCase();return/snow/.test(s)?'🌨️':/rain|shower/.test(s)?'🌧️':/storm/.test(s)?'⛈️':/partly/.test(s)?'⛅':/cloud|overcast/.test(s)?'☁️':'☀️'}
 function season(m,d){if(m==12)return'🎄 Merry season';if(m<=2)return'❄️ Snowy days';if(m<=5)return'🌷 Spring is here';if(m<=8)return'☀️ Summer fun';if(m==10&&d>=15)return'🎃 Spooky season';if(m==11&&d>=20)return'🦃 Thankful season';return'🍂 Cozy fall days'}
 function tick(){const n=den();$('greet').textContent=(n.h<12?'Good morning':n.h<17?'Good afternoon':'Good evening')+', Gaudios!';$('season').textContent=season(n.m,n.d);
  const nl=$('nowl');if(D&&nl){const t=n.h+n.min/60;if(t>=D.DAY_START&&t<=D.DAY_END){nl.style.display='';nl.style.top=((t-D.DAY_START)/(D.DAY_END-D.DAY_START)*100)+'%'}else nl.style.display='none'}
- guests(n);
+ guests(n);kitchen(n);
  const stale=D&&D.DATE_ISO!==n.iso&&(n.h>5||(n.h==5&&n.min>=30));$('banner').style.display=stale?'block':'none';$('banner').textContent='⚠️ This is old info ('+(D?D.DATE:'')+'). Refreshing…';
  if(stale&&Date.now()-LOADED>120000&&!sessionStorage.getItem('rl'+n.iso)){sessionStorage.setItem('rl'+n.iso,1);location.reload()}
  if(Date.now()-LOADED>3600000)location.reload()}

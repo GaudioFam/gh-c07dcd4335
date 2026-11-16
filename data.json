@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-16",
   "DATE": "Monday, November 16",
-  "UPDATED": "Updated Mon Nov 16, 11:27 AM MT",
+  "UPDATED": "Updated Mon Nov 16, 3:24 PM MT",
   "FUN_NOTE": "🐶 Charlie says the trash can is his nemesis today!",
   "WEATHER": {
     "high": "60°",
@@ -40,6 +40,8 @@
       "title": "Today's chores",
       "items": [
         "Probiotics for Jordan & Steve",
+        "Steve: 10,000 steps",
+        "Steve: Pulsetto 2x",
         "Take the trash out (pickup is Tuesday)"
       ]
     }
