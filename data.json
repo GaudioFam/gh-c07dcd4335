@@ -1,23 +1,23 @@
 {
-  "DATE_ISO": "2026-11-15",
-  "DATE": "Sunday, November 15",
-  "UPDATED": "Updated Sun Nov 15, 7:45 AM MT",
-  "FUN_NOTE": "🦃 Turkey week is coming: Carmella's practicing gobbles!",
+  "DATE_ISO": "2026-11-16",
+  "DATE": "Monday, November 16",
+  "UPDATED": "Updated Mon Nov 16, 4:43 AM MT",
+  "FUN_NOTE": "🐶 Charlie says the trash can is his nemesis today!",
   "WEATHER": {
-    "high": "54°",
-    "low": "37°",
-    "sky": "Partly cloudy, sunny breaks",
-    "precip": "Dry all day (under 15% chance)",
-    "wind": "S ~3-8 mph",
-    "dress": "Carmella: coat, hat & warm layers (colder in PC)\nGenevieve: fleece footie, hat, blanket in carrier"
+    "high": "60°",
+    "low": "39°",
+    "sky": "Mostly cloudy",
+    "precip": "Dry today (0%), rain tomorrow",
+    "wind": "SE ~5 mph",
+    "dress": "Carmella: light jacket & layers, cool morning\nGenevieve: fleece footie, hat, light blanket"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 9.5,
-      "end": 11,
-      "title": "Church (Park City)"
+      "start": 15.5,
+      "end": 17.5,
+      "title": "Alexis visit (sitter meet & greet)"
     }
   ],
   "CHECKLISTS": [
@@ -25,18 +25,7 @@
       "title": "Today's chores",
       "items": [
         "Probiotics for Jordan & Steve",
-        "Take the meats out for Alejandra (morning)"
-      ]
-    },
-    {
-      "title": "Church: out the door 9:00 AM",
-      "items": [
-        "Carmella sits on the potty",
-        "Car snacks",
-        "Change of clothes for both girls",
-        "Genevieve's carrier",
-        "A blanket",
-        "Warmer clothes (colder in Park City)"
+        "Take the trash out (pickup is Tuesday)"
       ]
     }
   ],
@@ -44,7 +33,7 @@
     {
       "lead": "Today",
       "title": "Find a new babysitter",
-      "detail": "Messaged Laura's 3 picks Nov 10; Alexis visits Mon 3:30 PM. Waiting on the others."
+      "detail": "Alexis meet & greet today 3:30 PM; revisit Kiera in January."
     },
     {
       "lead": "Soon",
@@ -61,6 +50,14 @@
     {
       "lead": "Mon",
       "title": "3:30 PM Alexis visit (sitter meet & greet)"
+    },
+    {
+      "lead": "Tue",
+      "title": "10:30 AM Carmella playdate with Sloan (Draper)"
+    },
+    {
+      "lead": "Tue",
+      "title": "3:00 PM Carmella with Marsha"
     }
   ],
   "GUESTS": []
