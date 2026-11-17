@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-17",
   "DATE": "Tuesday, November 17",
-  "UPDATED": "Updated Tue Nov 17, 4:50 AM MT",
+  "UPDATED": "Updated Tue Nov 17, 7:02 AM MT",
   "FUN_NOTE": "🌧️ Why did the puddle giggle? Splash-tastic Tuesday!",
   "WEATHER": {
     "high": "52°",
@@ -91,5 +91,12 @@
       "title": "6:00 PM Kiera visit (sitter meet & greet)"
     }
   ],
-  "GUESTS": []
+  "GUESTS": [
+    {
+      "name": "Mamo & Grandpa",
+      "from": "2026-11-24",
+      "to": "2026-11-27",
+      "note": "Thanksgiving visit, here through Friday"
+    }
+  ]
 }
