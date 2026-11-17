@@ -1,38 +1,43 @@
 {
-  "DATE_ISO": "2026-11-16",
-  "DATE": "Monday, November 16",
-  "UPDATED": "Updated Mon Nov 16, 3:24 PM MT",
-  "FUN_NOTE": "🐶 Charlie says the trash can is his nemesis today!",
+  "DATE_ISO": "2026-11-17",
+  "DATE": "Tuesday, November 17",
+  "UPDATED": "Updated Tue Nov 17, 4:50 AM MT",
+  "FUN_NOTE": "🌧️ Why did the puddle giggle? Splash-tastic Tuesday!",
   "WEATHER": {
-    "high": "60°",
-    "low": "39°",
-    "sky": "Mostly cloudy",
-    "precip": "Dry today (0%), rain tomorrow",
-    "wind": "SE ~5 mph",
-    "dress": "Carmella: light jacket & layers, cool morning\nGenevieve: fleece footie, hat, light blanket"
+    "high": "52°",
+    "low": "33°",
+    "sky": "Rain, snowy tonight",
+    "precip": "Rain from midday, rain/snow tonight",
+    "wind": "S ~5-10 mph",
+    "dress": "Carmella: rain jacket, boots & warm layers\nGenevieve: fleece footie, hat; cover in rain"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 8.75,
-      "end": 8.9167,
+      "start": 8,
+      "end": 8.5,
       "title": "Steve busy (work)"
     },
     {
-      "start": 9.5,
-      "end": 10.75,
+      "start": 10.5,
+      "end": 11.5,
+      "title": "Carmella playdate with Sloan (Draper)"
+    },
+    {
+      "start": 11,
+      "end": 11.5,
       "title": "Steve busy (work)"
     },
     {
-      "start": 13,
-      "end": 13.5,
+      "start": 12.5,
+      "end": 14,
       "title": "Steve busy (work)"
     },
     {
-      "start": 15.5,
-      "end": 17.5,
-      "title": "Alexis visit (sitter meet & greet)"
+      "start": 15,
+      "end": 17,
+      "title": "Carmella with Marsha"
     }
   ],
   "CHECKLISTS": [
@@ -41,21 +46,33 @@
       "items": [
         "Probiotics for Jordan & Steve",
         "Steve: 10,000 steps",
-        "Steve: Pulsetto 2x",
-        "Take the trash out (pickup is Tuesday)"
+        "Steve: Pulsetto 2x"
+      ]
+    },
+    {
+      "title": "Marsha handoff, 3:00 PM",
+      "items": [
+        "Carmella's snack & water",
+        "Dinner: Jordan will leave a plan",
+        "Change of clothes for Carmella",
+        "Rain gear if going outside"
       ]
     }
   ],
   "TODOS": [
+    {
+      "lead": "All day",
+      "title": "Steve: 24-hour fast"
+    },
     {
       "lead": "Today",
       "title": "Mail Backcountry returns",
       "detail": "Shirts + Carmella's North Face jacket, one box, jacket label."
     },
     {
-      "lead": "Today",
+      "lead": "Soon",
       "title": "Find a new babysitter",
-      "detail": "Alexis meet & greet today 3:30 PM; revisit Kiera in January."
+      "detail": "Alexis met Mon; Kiera visit Wed 6 PM; revisit Kiera in January."
     },
     {
       "lead": "Soon",
@@ -69,18 +86,6 @@
     }
   ],
   "COMING_UP": [
-    {
-      "lead": "Mon",
-      "title": "3:30 PM Alexis visit (sitter meet & greet)"
-    },
-    {
-      "lead": "Tue",
-      "title": "10:30 AM Carmella playdate with Sloan (Draper)"
-    },
-    {
-      "lead": "Tue",
-      "title": "3:00 PM Carmella with Marsha"
-    },
     {
       "lead": "Wed",
       "title": "6:00 PM Kiera visit (sitter meet & greet)"
