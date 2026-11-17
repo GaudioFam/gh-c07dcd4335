@@ -1,11 +1,11 @@
 {
   "DATE_ISO": "2026-11-17",
   "DATE": "Tuesday, November 17",
-  "UPDATED": "Updated Tue Nov 17, 7:02 AM MT",
-  "FUN_NOTE": "🌧️ Why did the puddle giggle? Splash-tastic Tuesday!",
+  "UPDATED": "Updated Tue Nov 17, 11:23 AM MT",
+  "FUN_NOTE": "\ud83c\udf27\ufe0f Why did the puddle giggle? Splash-tastic Tuesday!",
   "WEATHER": {
-    "high": "52°",
-    "low": "33°",
+    "high": "52\u00b0",
+    "low": "33\u00b0",
     "sky": "Rain, snowy tonight",
     "precip": "Rain from midday, rain/snow tonight",
     "wind": "S ~5-10 mph",
@@ -23,11 +23,6 @@
       "start": 10.5,
       "end": 11.5,
       "title": "Carmella playdate with Sloan (Draper)"
-    },
-    {
-      "start": 11,
-      "end": 11.5,
-      "title": "Steve busy (work)"
     },
     {
       "start": 12.5,
