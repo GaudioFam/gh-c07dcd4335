@@ -1,11 +1,11 @@
 {
   "DATE_ISO": "2026-11-17",
   "DATE": "Tuesday, November 17",
-  "UPDATED": "Updated Tue Nov 17, 11:23 AM MT",
-  "FUN_NOTE": "\ud83c\udf27\ufe0f Why did the puddle giggle? Splash-tastic Tuesday!",
+  "UPDATED": "Updated Tue Nov 17, 1:21 PM MT",
+  "FUN_NOTE": "🌧️ Why did the puddle giggle? Splash-tastic Tuesday!",
   "WEATHER": {
-    "high": "52\u00b0",
-    "low": "33\u00b0",
+    "high": "52°",
+    "low": "33°",
     "sky": "Rain, snowy tonight",
     "precip": "Rain from midday, rain/snow tonight",
     "wind": "S ~5-10 mph",
@@ -15,7 +15,7 @@
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 8,
+      "start": 7.5,
       "end": 8.5,
       "title": "Steve busy (work)"
     },
@@ -26,7 +26,12 @@
     },
     {
       "start": 12.5,
-      "end": 14,
+      "end": 13.5,
+      "title": "Steve busy (work)"
+    },
+    {
+      "start": 14,
+      "end": 15,
       "title": "Steve busy (work)"
     },
     {
