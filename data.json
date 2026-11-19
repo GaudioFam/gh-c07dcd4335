@@ -1,11 +1,11 @@
 {
   "DATE_ISO": "2026-11-19",
   "DATE": "Thursday, November 19",
-  "UPDATED": "Updated Thu Nov 19, 4:37 AM MT",
-  "FUN_NOTE": "🩰 Twirls, tutus & drizzle: Happy Thursday, Gaudios!",
+  "UPDATED": "Updated Thu Nov 19, 9:22 AM MT",
+  "FUN_NOTE": "\ud83e\ude70 Twirls, tutus & drizzle: Happy Thursday, Gaudios!",
   "WEATHER": {
-    "high": "45°",
-    "low": "39°",
+    "high": "45\u00b0",
+    "low": "39\u00b0",
     "sky": "Cloudy, light rain & drizzle likely",
     "precip": "Rain/drizzle likely, ~50% (mostly PM)",
     "wind": "S/SW ~5-12 mph",
@@ -33,6 +33,11 @@
       "start": 10.33,
       "end": 11.33,
       "title": "Carmella Ballet (photo day!)"
+    },
+    {
+      "start": 11,
+      "end": 11.5,
+      "title": "Steve busy (work)"
     },
     {
       "start": 13.25,
