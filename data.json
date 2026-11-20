@@ -1,11 +1,11 @@
 {
   "DATE_ISO": "2026-11-19",
   "DATE": "Thursday, November 19",
-  "UPDATED": "Updated Thu Nov 19, 9:22 AM MT",
-  "FUN_NOTE": "\ud83e\ude70 Twirls, tutus & drizzle: Happy Thursday, Gaudios!",
+  "UPDATED": "Updated Thu Nov 19, 5:24 PM MT",
+  "FUN_NOTE": "🩰 Twirls, tutus & drizzle: Happy Thursday, Gaudios!",
   "WEATHER": {
-    "high": "45\u00b0",
-    "low": "39\u00b0",
+    "high": "45°",
+    "low": "39°",
     "sky": "Cloudy, light rain & drizzle likely",
     "precip": "Rain/drizzle likely, ~50% (mostly PM)",
     "wind": "S/SW ~5-12 mph",
@@ -48,6 +48,11 @@
       "start": 13.75,
       "end": 16.75,
       "title": "Jordan hair (Steve has Carmella)"
+    },
+    {
+      "start": 16.5,
+      "end": 16.75,
+      "title": "Steve busy (work)"
     }
   ],
   "CHECKLISTS": [
