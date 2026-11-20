@@ -1,58 +1,28 @@
 {
-  "DATE_ISO": "2026-11-19",
-  "DATE": "Thursday, November 19",
-  "UPDATED": "Updated Thu Nov 19, 5:24 PM MT",
-  "FUN_NOTE": "🩰 Twirls, tutus & drizzle: Happy Thursday, Gaudios!",
+  "DATE_ISO": "2026-11-20",
+  "DATE": "Friday, November 20",
+  "UPDATED": "Updated Fri Nov 20, 4:48 AM MT",
+  "FUN_NOTE": "🐶 Charlie & Asher vote: cozy blankets on this slushy Friday",
   "WEATHER": {
-    "high": "45°",
-    "low": "39°",
-    "sky": "Cloudy, light rain & drizzle likely",
-    "precip": "Rain/drizzle likely, ~50% (mostly PM)",
-    "wind": "S/SW ~5-12 mph",
-    "dress": "Carmella: rain jacket, boots, hat & warm layers\nGenevieve: fleece footie, hat, rain cover on carrier"
+    "high": "42°",
+    "low": "27°",
+    "sky": "Mostly cloudy, rain & snow mix",
+    "precip": "Rain/snow likely, ~70-90% (little accumulation)",
+    "wind": "S/SW ~2-10 mph",
+    "dress": "Carmella: snow boots, waterproof jacket, hat & mittens\nGenevieve: warm footie, hat, blanket & rain cover on carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 8.5,
-      "end": 8.75,
-      "title": "Steve busy (work)"
-    },
-    {
       "start": 9,
-      "end": 9.5,
+      "end": 9.67,
       "title": "Steve busy (work)"
-    },
-    {
-      "start": 9.5,
-      "end": 11.5,
-      "title": "Cleaners (Flor & Maholi)"
-    },
-    {
-      "start": 10.33,
-      "end": 11.33,
-      "title": "Carmella Ballet (photo day!)"
-    },
-    {
-      "start": 11,
-      "end": 11.5,
-      "title": "Steve busy (work)"
-    },
-    {
-      "start": 13.25,
-      "end": 16,
-      "title": "Genevieve with Marsha"
     },
     {
       "start": 13.75,
-      "end": 16.75,
-      "title": "Jordan hair (Steve has Carmella)"
-    },
-    {
-      "start": 16.5,
-      "end": 16.75,
-      "title": "Steve busy (work)"
+      "end": 14.75,
+      "title": "Steve: Costco tire swap (Sandy)"
     }
   ],
   "CHECKLISTS": [
@@ -62,29 +32,12 @@
         "Probiotics for Jordan & Steve",
         "Steve: 10,000 steps",
         "Steve: Pulsetto 2x",
-        "Strip the sheets",
-        "Set out the laundry",
+        "Place grocery order (Alejandra + weekend)",
         "Pick up the toys"
-      ]
-    },
-    {
-      "title": "Ballet, leave 10:00 AM",
-      "items": [
-        "Carmella sits on the potty",
-        "Ballet clothes & hair up; slippers",
-        "Water and a snack",
-        "Genevieve's carrier",
-        "Change of clothes for Carmella",
-        "Weather-appropriate clothes"
       ]
     }
   ],
   "TODOS": [
-    {
-      "lead": "All day",
-      "title": "Steve: 24-hour fast",
-      "detail": "On the Gaudio Fam calendar."
-    },
     {
       "lead": "Soon",
       "title": "Find a new babysitter",
@@ -103,8 +56,12 @@
   ],
   "COMING_UP": [
     {
-      "lead": "Fri",
-      "title": "1:45 PM Steve: Costco tire swap (Sandy)"
+      "lead": "Tue",
+      "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
+    },
+    {
+      "lead": "Thu",
+      "title": "Thanksgiving Day with Mamo & Grandpa"
     }
   ],
   "GUESTS": [
