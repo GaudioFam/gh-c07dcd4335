@@ -31,8 +31,17 @@ ul{list-style:none;margin:0;padding:0}li{margin:.28rem 0;display:flex;gap:.45rem
 #banner{display:none;background:#D9536A;color:#fff;font-weight:800;border-radius:14px;padding:8px 14px;margin-bottom:10px;text-align:center;flex:none}
 #welcome{display:none;background:linear-gradient(135deg,#FFD9B8,#FDE2E4 55%,#E8E6FA);border-radius:22px;padding:.45rem 1rem;margin-bottom:12px;text-align:center;flex:none;box-shadow:0 3px 0 rgba(59,42,32,.07)}#welcome b{font-size:1.45rem;font-weight:900}#welcome .soft{font-size:.85rem;font-weight:700}
 #off{display:none;font-size:.7rem;color:#D9536A}
+.tg{display:none;background:#FFF1C7;flex:none;margin-bottom:12px;overflow:auto;max-height:12rem;padding:.4rem .8rem}
+.tg .tghead{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin-bottom:.15rem}
+.tg h2{margin:0;font-size:1.1rem}
+.tg .tgwhen{font-weight:800;font-size:1rem;color:var(--soft);white-space:nowrap}
+.tg .tggrid{display:grid;grid-template-columns:1fr 1fr;gap:.15rem .9rem}
+.tg .tggrid.one{grid-template-columns:1fr}
+.tg .tgday{font-size:1rem;line-height:1.3;display:flex;gap:.4rem;align-items:flex-start}
+.tg .tgpill{background:#fff;border-radius:999px;padding:1px .5rem;font-size:1rem;font-weight:800;flex:none;white-space:nowrap;margin-top:.05rem;color:#C99A06}
+.tg .later{font-size:1rem;line-height:1.3;margin-top:.2rem}
 @media(max-width:960px){body{overflow:auto;height:auto}.top{grid-template-columns:1fr 1fr}.greet{grid-column:1/-1}.main{grid-template-columns:1fr 1fr}.main>.col:first-child{grid-column:1/-1}.tl{min-height:420px}}
-@media(max-width:600px){.top,.main{grid-template-columns:1fr}}
+@media(max-width:600px){.top,.main{grid-template-columns:1fr}.tg .tggrid{grid-template-columns:1fr}.tg{max-height:none}}
 </style></head><body>
 <div id="steveEve" role="status"></div>
 <div id="banner"></div>
@@ -41,6 +50,7 @@ ul{list-style:none;margin:0;padding:0}li{margin:.28rem 0;display:flex;gap:.45rem
 <div class="card greet"><div class="g1" id="greet"></div><div class="soft" id="season"></div><div class="date" id="date"></div><div id="fun"></div><div class="stamp"><span id="upd"></span> <span id="off"></span></div></div>
 <div class="card wx"><div class="e" id="wxe"></div><div><div class="hl" id="hl"></div><div id="sky"></div><div class="soft sm" id="pw"></div></div></div>
 <div class="card dress"><h2>👗 Dress the girls</h2><div id="dress"></div></div></div>
+<div class="card tg" id="tg"></div>
 <div class="main"><div class="col"><div class="card sched"><h2>📅 Today</h2><div class="tl" id="tl"></div></div></div>
 <div class="col" id="checks"></div>
 <div class="col"><div class="card" style="background:#E6F4EA"><h2>✅ To-dos</h2><ul id="todos"></ul></div><div class="card" style="background:#E8E6FA"><h2>🔜 Coming up</h2><ul id="coming"></ul></div></div></div>
@@ -59,6 +69,50 @@ const STEVE_EVE_DEFAULT=[
  "🍿 Movie night is a yes, Steve — a kitchen raid is a no. Closed till morning!"
 ];
 function den(){const p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',weekday:'short',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);const wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);return{iso:`${p.year}-${p.month}-${p.day}`,m:+p.month,d:+p.day,h:+p.hour,min:+p.minute,wd:wd<0?0:wd}}
+
+/* Thanksgiving prep is STATIC in this file (not data.json) so the 5 AM refresh
+   and midday calendar sync, which rewrite data.json, cannot wipe the card.
+   Auto-rolls by America/Denver date: past days hide; the card is removed after Nov 26. */
+const TG_LAST='2026-11-26';
+const TG_DAYS=[
+  {date:'2026-11-21',short:'Sat',items:['Costco run','Make 3 pie crust discs, roll 2 into the new glass pie plates and freeze','Toast pecans','Cube bread for stuffing to dry','Feed sourdough starter (daily all week)']},
+  {date:'2026-11-22',short:'Sun',items:['Make the citrus vinaigrette and caper-raisin vinaigrette','Seed the pomegranates','Make, cut, and freeze the sourdough biscuits']},
+  {date:'2026-11-23',short:'Mon',items:['Redmond run','Make cranberry sauce','Brown the sausage and sauté the onion and celery for stuffing','Steam the eggs for deviled eggs','Set out and label serving dishes']},
+  {date:'2026-11-24',short:'Tue',items:['Blanch green beans, slice shallots','Steve spatchcocks and dry-brines the turkey','Jordan makes gravy from the wings, backbone, and neck']},
+  {date:'2026-11-25',short:'Wed',items:['Bake the pumpkin pie and the double-crust apple pie','Make the deviled eggs','Toss the stuffing and refrigerate']},
+  {date:'2026-11-26',short:'Thu',items:['11:00 Traeger on','11:30 Turkey on','~2:45 Turkey off; stuffing in the oven','3:30 Biscuits in','4:00 Dinner']}
+];
+const TG_LATER={
+  '2026-11-21':'Costco, pie crusts, pecans, cube bread, feed starter',
+  '2026-11-22':'vinaigrettes, pomegranates, freeze biscuits',
+  '2026-11-23':'Redmond, cranberry, stuffing base, eggs, dishes',
+  '2026-11-24':'beans, turkey & gravy',
+  '2026-11-25':'pies, deviled eggs, toss stuffing',
+  '2026-11-26':'Traeger 11:00, dinner 4:00'
+};
+function tgHead(d){
+  const md=d.date.slice(5,7)+'/'+d.date.slice(8);
+  let x=d.short+' '+md;
+  if(d.date==='2026-11-24')x+=' · parents arrive';
+  return x;
+}
+function tgRoll(n){
+  const el=$('tg');if(!el)return;
+  if(n.iso>TG_LAST){if(el.style.display!=='none'){el.style.display='none';el.innerHTML='';fit()}return}
+  const rem=TG_DAYS.filter(d=>d.date>=n.iso);
+  if(!rem.length){if(el.style.display!=='none'){el.style.display='none';el.innerHTML='';fit()}return}
+  const today=rem.find(d=>d.date===n.iso),next=rem.find(d=>d.date>n.iso),later=rem.filter(d=>d!==today&&d!==next);
+  const title=n.iso===TG_LAST?'🦃 Thanksgiving Day':(today?'🦃 Thanksgiving prep':'🦃 Thanksgiving prep · starts tomorrow');
+  const block=(kind,d)=>`<div class="tgday"><span class="tgpill">${esc(kind)}</span><div><b>${esc(tgHead(d))}</b> ${d.items.map(esc).join(' · ')}</div></div>`;
+  let grid='';
+  if(today&&next)grid=`<div class="tggrid">${block('TODAY',today)}${block('TOMORROW',next)}</div>`;
+  else if(today)grid=`<div class="tggrid one">${block('TODAY',today)}</div>`;
+  else if(next)grid=`<div class="tggrid one">${block('TOMORROW',next)}</div>`;
+  const laterLine=later.length?`<div class="later"><b>Later:</b> ${later.map(d=>esc(d.short)+' '+esc(TG_LATER[d.date])).join(' · ')}</div>`:'';
+  const starter=(n.iso>='2026-11-22'&&n.iso<='2026-11-25')?'<div class="later">Also: feed the sourdough starter</div>':'';
+  const html=`<div class="tghead"><h2>${title}</h2><div class="tgwhen">Dinner Thursday 4:00 PM</div></div>${grid}${laterLine}${starter}`;
+  if(el.innerHTML!==html||el.style.display!=='block'){el.innerHTML=html;el.style.display='block';fit()}
+}
 function kitchen(n){const el=$('steveEve');if(!el)return;const on=n.h>=18;const lines=(D&&Array.isArray(D.STEVE_EVENING_BANNER)&&D.STEVE_EVENING_BANNER.length)?D.STEVE_EVENING_BANNER:STEVE_EVE_DEFAULT;const msg=lines[((n.wd%lines.length)+lines.length)%lines.length];const next=on?'block':'none';if(el.style.display!==next||(on&&el.textContent!==msg)){el.textContent=on?msg:'';el.style.display=next;if(D)fit()}}
 function hlab(h){const hh=Math.floor(h),m=Math.round((h-hh)*60),ap=hh<12?'AM':'PM',x=hh%12||12;return x+(m?':'+String(m).padStart(2,'0'):'')+' '+ap}
 function emo(t){t=t.toLowerCase();for(const[k,e]of[[/ballet/,'🩰'],[/vet|dog/,'🐶'],[/church|bible/,'⛪'],[/grocery/,'🛒'],[/tire|car\b/,'🚗'],[/date night/,'💕'],[/haircut/,'💈'],[/birthday/,'🎂'],[/steve/,'👨']])if(k.test(t))return e;return'✨'}
@@ -66,16 +120,16 @@ function sky(s){s=s.toLowerCase();return/snow/.test(s)?'🌨️':/rain|shower/.t
 function season(m,d){if(m==12)return'🎄 Merry season';if(m<=2)return'❄️ Snowy days';if(m<=5)return'🌷 Spring is here';if(m<=8)return'☀️ Summer fun';if(m==10&&d>=15)return'🎃 Spooky season';if(m==11&&d>=20)return'🦃 Thankful season';return'🍂 Cozy fall days'}
 function tick(){const n=den();$('greet').textContent=(n.h<12?'Good morning':n.h<17?'Good afternoon':'Good evening')+', Gaudios!';$('season').textContent=season(n.m,n.d);
  const nl=$('nowl');if(D&&nl){const t=n.h+n.min/60;if(t>=D.DAY_START&&t<=D.DAY_END){nl.style.display='';nl.style.top=((t-D.DAY_START)/(D.DAY_END-D.DAY_START)*100)+'%'}else nl.style.display='none'}
- guests(n);kitchen(n);
+ guests(n);kitchen(n);tgRoll(n);
  const stale=D&&D.DATE_ISO!==n.iso&&(n.h>5||(n.h==5&&n.min>=30));$('banner').style.display=stale?'block':'none';$('banner').textContent='⚠️ This is old info ('+(D?D.DATE:'')+'). Refreshing…';
  if(stale&&Date.now()-LOADED>120000&&!sessionStorage.getItem('rl'+n.iso)){sessionStorage.setItem('rl'+n.iso,1);location.reload()}
  if(Date.now()-LOADED>3600000)location.reload()}
 function guests(n){const w=$('welcome');const g=(D&&D.GUESTS||[]).filter(x=>x.from<=n.iso&&n.iso<=x.to);if(!g.length){if(w.style.display!=='none'){w.style.display='none';D&&fit()}return}
  const nm=g.map(x=>x.name),names=nm.length>1?nm.slice(0,-1).join(', ')+' & '+nm[nm.length-1]:nm[0],notes=g.map(x=>x.from===n.iso&&x.arrive?x.arrive:x.to===n.iso?'Last day together, soak it up!':x.note||'').filter(Boolean).join(' · ');
  const html='<b>💛 Welcome, '+esc(names)+'! 💛</b>';if(w.innerHTML!==html||w.style.display!=='block'){w.innerHTML=html;w.style.display='block';fit()}}
-function fit(){if(innerWidth<=960){document.documentElement.style.setProperty('--fs','21px');return}const r=document.documentElement;let f=Math.max(16,Math.min(24,innerHeight/39));
+function fit(){if(innerWidth<=960){document.documentElement.style.setProperty('--fs','21px');return}const r=document.documentElement;let f=Math.max(18,Math.min(24,innerHeight/39));
  const over=()=>document.body.scrollHeight>innerHeight+1||[...document.querySelectorAll('.col')].some(c=>c.scrollHeight>c.clientHeight+1)||[...document.querySelectorAll('.col>.card')].some(c=>c.scrollHeight>c.clientHeight+1);
- r.style.setProperty('--fs',f+'px');while(f>18&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}
+ r.style.setProperty('--fs',f+'px');while(f-0.5>=18&&over()){f-=.5;r.style.setProperty('--fs',f+'px')}
  document.querySelectorAll('.ev:not(.one) .t').forEach(t=>{const lh=parseFloat(getComputedStyle(t).lineHeight)||16;t.style.webkitLineClamp=Math.max(1,Math.floor((t.parentElement.clientHeight-4)/lh))})}
 addEventListener('resize',()=>D&&fit());
 function render(){const d=D;$('date').textContent=d.DATE;$('fun').textContent=d.FUN_NOTE;$('upd').textContent=d.UPDATED;const w=d.WEATHER;
