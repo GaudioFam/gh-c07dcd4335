@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-20",
   "DATE": "Friday, November 20",
-  "UPDATED": "Updated Fri Nov 20, 3:25 PM MT",
+  "UPDATED": "Updated Fri Nov 20, 7:22 PM MT",
   "FUN_NOTE": "🐶 Charlie & Asher vote: blankets on slushy Friday",
   "WEATHER": {
     "high": "42°",
@@ -54,6 +54,10 @@
     }
   ],
   "COMING_UP": [
+    {
+      "lead": "Sat",
+      "title": "12:00 PM 130 Norfolk Ave, Park City"
+    },
     {
       "lead": "Sat",
       "title": "1:30 PM Steve: Costco tire swap (Sandy)"
