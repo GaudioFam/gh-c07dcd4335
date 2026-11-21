@@ -1,28 +1,33 @@
 {
-  "DATE_ISO": "2026-11-20",
-  "DATE": "Friday, November 20",
-  "UPDATED": "Updated Fri Nov 20, 7:22 PM MT",
-  "FUN_NOTE": "🐶 Charlie & Asher vote: blankets on slushy Friday",
+  "DATE_ISO": "2026-11-21",
+  "DATE": "Saturday, November 21",
+  "UPDATED": "Updated Sat Nov 21, 4:45 AM MT",
+  "FUN_NOTE": "🐾 Charlie & Asher: 3 sleeps till Mamo & Grandpa!",
   "WEATHER": {
-    "high": "42°",
+    "high": "41°",
     "low": "27°",
-    "sky": "Mostly cloudy, rain & snow mix",
-    "precip": "Rain/snow likely, ~70-90% (little accumulation)",
-    "wind": "S/SW ~2-10 mph",
-    "dress": "Carmella: snow boots, waterproof jacket, hat & mittens\nGenevieve: warm footie, hat, blanket & rain cover on carrier"
+    "sky": "Light snow early, then partly sunny",
+    "precip": "Slight chance of light snow before 11 AM (~20%)",
+    "wind": "S ~2 mph",
+    "dress": "Carmella: warm jacket, hat, mittens & boots\nGenevieve: warm footie, hat & blanket on carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 9,
-      "end": 9.67,
+      "start": 8,
+      "end": 9.25,
       "title": "Steve busy (work)"
     },
     {
-      "start": 13.75,
+      "start": 10,
       "end": 14.75,
-      "title": "Steve: Costco tire swap (Sandy)"
+      "title": "Steve busy (work)"
+    },
+    {
+      "start": 12,
+      "end": 14.5,
+      "title": "Park City: 130 Norfolk Ave"
     }
   ],
   "CHECKLISTS": [
@@ -31,12 +36,16 @@
       "items": [
         "Probiotics for Jordan & Steve",
         "Steve: 10,000 steps",
-        "Steve: Pulsetto 2x",
-        "Place grocery order (Alejandra + weekend)"
+        "Steve: Pulsetto 2x"
       ]
     }
   ],
   "TODOS": [
+    {
+      "lead": "All day",
+      "title": "Steve: 24-hour fast",
+      "detail": ""
+    },
     {
       "lead": "Soon",
       "title": "Find a new babysitter",
@@ -54,14 +63,6 @@
     }
   ],
   "COMING_UP": [
-    {
-      "lead": "Sat",
-      "title": "12:00 PM 130 Norfolk Ave, Park City"
-    },
-    {
-      "lead": "Sat",
-      "title": "1:30 PM Steve: Costco tire swap (Sandy)"
-    },
     {
       "lead": "Tue",
       "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
