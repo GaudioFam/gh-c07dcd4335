@@ -1,33 +1,23 @@
 {
-  "DATE_ISO": "2026-11-21",
-  "DATE": "Saturday, November 21",
-  "UPDATED": "Updated Sat Nov 21, 3:28 PM MT",
-  "FUN_NOTE": "🐾 Charlie & Asher: 3 sleeps till Mamo & Grandpa!",
+  "DATE_ISO": "2026-11-22",
+  "DATE": "Sunday, November 22",
+  "UPDATED": "Updated Sun Nov 22, 4:50 AM MT",
+  "FUN_NOTE": "🦃 Charlie & Asher: the turkey smells amazing!",
   "WEATHER": {
-    "high": "41°",
-    "low": "27°",
-    "sky": "Light snow early, then partly sunny",
-    "precip": "Slight chance of light snow before 11 AM (~20%)",
-    "wind": "S ~2 mph",
-    "dress": "Carmella: warm jacket, hat, mittens & boots\nGenevieve: warm footie, hat & blanket on carrier"
+    "high": "47°",
+    "low": "29°",
+    "sky": "Mostly cloudy",
+    "precip": "No precipitation expected (0%)",
+    "wind": "SSE ~2 mph",
+    "dress": "Carmella: warm coat, hat & mittens for Park City\nGenevieve: warm footie, hat & blanket on carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 8,
-      "end": 9.25,
-      "title": "Steve busy (work)"
-    },
-    {
-      "start": 10,
-      "end": 14.75,
-      "title": "Steve busy (work)"
-    },
-    {
-      "start": 12,
-      "end": 14.5,
-      "title": "Park City: 130 Norfolk Ave"
+      "start": 9.5,
+      "end": 11,
+      "title": "Church in Park City"
     }
   ],
   "CHECKLISTS": [
@@ -36,16 +26,24 @@
       "items": [
         "Probiotics for Jordan & Steve",
         "Steve: 10,000 steps",
-        "Steve: Pulsetto 2x"
+        "Steve: Pulsetto 2x",
+        "Feed sourdough",
+        "Take the turkey out of the freezer"
+      ]
+    },
+    {
+      "title": "Church: leave at 9:00 AM",
+      "items": [
+        "Carmella sits on the potty",
+        "Car snacks",
+        "Change of clothes for both girls",
+        "Genevieve's carrier",
+        "A blanket",
+        "Warmer clothes (colder up there)"
       ]
     }
   ],
   "TODOS": [
-    {
-      "lead": "All day",
-      "title": "Steve: 24-hour fast",
-      "detail": ""
-    },
     {
       "lead": "Soon",
       "title": "Find a new babysitter",
@@ -64,8 +62,8 @@
   ],
   "COMING_UP": [
     {
-      "lead": "Sun",
-      "title": "9:30 AM Church in Park City"
+      "lead": "Mon",
+      "title": "10:00 AM Genevieve's 2-month checkup"
     },
     {
       "lead": "Tue",
