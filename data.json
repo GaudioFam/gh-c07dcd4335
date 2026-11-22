@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-22",
   "DATE": "Sunday, November 22",
-  "UPDATED": "Updated Sun Nov 22, 4:50 AM MT",
+  "UPDATED": "Updated Sun Nov 22, 9:17 AM MT",
   "FUN_NOTE": "🦃 Charlie & Asher: the turkey smells amazing!",
   "WEATHER": {
     "high": "47°",
@@ -61,6 +61,14 @@
     }
   ],
   "COMING_UP": [
+    {
+      "lead": "Mon",
+      "title": "10 AM 👶 Genevieve's 2-month well visit"
+    },
+    {
+      "lead": "Mon",
+      "title": "10 AM Genevieve apt Willow Creek"
+    },
     {
       "lead": "Mon",
       "title": "10:00 AM Genevieve's 2-month checkup"
