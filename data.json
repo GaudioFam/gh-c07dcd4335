@@ -1,23 +1,28 @@
 {
-  "DATE_ISO": "2026-11-22",
-  "DATE": "Sunday, November 22",
-  "UPDATED": "Updated Sun Nov 22, 9:17 AM MT",
-  "FUN_NOTE": "🦃 Charlie & Asher: the turkey smells amazing!",
+  "DATE_ISO": "2026-11-23",
+  "DATE": "Monday, November 23",
+  "UPDATED": "Updated Mon Nov 23, 4:45 AM MT",
+  "FUN_NOTE": "🐶 Charlie & Asher are practicing their welcome wags!",
   "WEATHER": {
-    "high": "47°",
-    "low": "29°",
-    "sky": "Mostly cloudy",
-    "precip": "No precipitation expected (0%)",
-    "wind": "SSE ~2 mph",
-    "dress": "Carmella: warm coat, hat & mittens for Park City\nGenevieve: warm footie, hat & blanket on carrier"
+    "high": "44°",
+    "low": "25°",
+    "sky": "Cloudy, chance of light snow",
+    "precip": "40% chance of light snow or rain",
+    "wind": "W ~1 mph",
+    "dress": "Carmella: warm coat, hat, mittens & boots\nGenevieve: warm footie, hat & blanket on carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 9.5,
+      "start": 10,
       "end": 11,
-      "title": "Church in Park City"
+      "title": "👶 Genevieve's 2-month checkup"
+    },
+    {
+      "start": 10,
+      "end": 10.5,
+      "title": "Steve busy (work)"
     }
   ],
   "CHECKLISTS": [
@@ -28,18 +33,7 @@
         "Steve: 10,000 steps",
         "Steve: Pulsetto 2x",
         "Feed sourdough",
-        "Take the turkey out of the freezer"
-      ]
-    },
-    {
-      "title": "Church: leave at 9:00 AM",
-      "items": [
-        "Carmella sits on the potty",
-        "Car snacks",
-        "Change of clothes for both girls",
-        "Genevieve's carrier",
-        "A blanket",
-        "Warmer clothes (colder up there)"
+        "Take the trash out (pickup Tuesday)"
       ]
     }
   ],
@@ -62,20 +56,12 @@
   ],
   "COMING_UP": [
     {
-      "lead": "Mon",
-      "title": "10 AM 👶 Genevieve's 2-month well visit"
-    },
-    {
-      "lead": "Mon",
-      "title": "10 AM Genevieve apt Willow Creek"
-    },
-    {
-      "lead": "Mon",
-      "title": "10:00 AM Genevieve's 2-month checkup"
+      "lead": "Tue",
+      "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
     },
     {
       "lead": "Tue",
-      "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
+      "title": "3 PM Carmella with Marsha"
     },
     {
       "lead": "Thu",
