@@ -1,7 +1,7 @@
 {
   "DATE_ISO": "2026-11-23",
   "DATE": "Monday, November 23",
-  "UPDATED": "Updated Mon Nov 23, 4:45 AM MT",
+  "UPDATED": "Updated Mon Nov 23, 9:15 AM MT",
   "FUN_NOTE": "🐶 Charlie & Asher are practicing their welcome wags!",
   "WEATHER": {
     "high": "44°",
@@ -16,13 +16,18 @@
   "EVENTS": [
     {
       "start": 10,
+      "end": 10.5,
+      "title": "Steve busy (work)"
+    },
+    {
+      "start": 10,
       "end": 11,
       "title": "👶 Genevieve's 2-month checkup"
     },
     {
       "start": 10,
-      "end": 10.5,
-      "title": "Steve busy (work)"
+      "end": 11,
+      "title": "👶 Genevieve's 2-month checkup"
     }
   ],
   "CHECKLISTS": [
@@ -57,11 +62,11 @@
   "COMING_UP": [
     {
       "lead": "Tue",
-      "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
+      "title": "3 PM Carmella with Marsha"
     },
     {
       "lead": "Tue",
-      "title": "3 PM Carmella with Marsha"
+      "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
     },
     {
       "lead": "Thu",
