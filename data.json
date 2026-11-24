@@ -1,33 +1,33 @@
 {
- "DATE_ISO": "2026-11-23",
- "DATE": "Monday, November 23",
- "UPDATED": "Updated Mon Nov 23, 9:15 AM MT",
- "FUN_NOTE": "🐶 Charlie & Asher are practicing their welcome wags!",
+ "DATE_ISO": "2026-11-24",
+ "DATE": "Tuesday, November 24",
+ "UPDATED": "Updated Tue Nov 24, 4:45 AM MT",
+ "FUN_NOTE": "🦃 Thanksgiving week: Mamo & Grandpa land today!",
  "WEATHER": {
-  "high": "44°",
-  "low": "25°",
-  "sky": "Cloudy, chance of light snow",
-  "precip": "40% chance of light snow or rain",
-  "wind": "W ~1 mph",
-  "dress": "Carmella: warm coat, hat, mittens & boots\nGenevieve: warm footie, hat & blanket on carrier"
+  "high": "47°",
+  "low": "32°",
+  "sky": "Mostly sunny, partly cloudy later",
+  "precip": "3% chance of precip",
+  "wind": "Light, ~1-5 mph",
+  "dress": "Carmella: warm coat, hat & mittens\nGenevieve: warm footie, hat & blanket on carrier"
  },
  "DAY_START": 8,
  "DAY_END": 22,
  "EVENTS": [
   {
-   "start": 10,
-   "end": 10.5,
+   "start": 9.87,
+   "end": 10.75,
+   "title": "Mamo & Grandpa arrive (SLC airport)"
+  },
+  {
+   "start": 12.5,
+   "end": 13.5,
    "title": "Steve busy (work)"
   },
   {
-   "start": 10,
-   "end": 11,
-   "title": "👶 Genevieve's 2-month checkup"
-  },
-  {
-   "start": 10,
-   "end": 11,
-   "title": "👶 Genevieve's 2-month checkup"
+   "start": 15,
+   "end": 17,
+   "title": "Carmella with Marsha"
   }
  ],
  "CHECKLISTS": [
@@ -37,13 +37,25 @@
     "Probiotics for Jordan & Steve",
     "Steve: 10,000 steps",
     "Steve: Pulsetto 2x",
-    "Feed sourdough",
-    "Take the trash out (pickup Tuesday)",
-    "Steve: take out steaks"
+    "Feed sourdough"
+   ]
+  },
+  {
+   "title": "Carmella with Gaga (3 PM)",
+   "items": [
+    "Potty before leaving",
+    "Pack her water bottle & a snack",
+    "Bring her lovey & a change of clothes",
+    "Warm coat, hat & mittens"
    ]
   }
  ],
  "TODOS": [
+  {
+   "lead": "All day",
+   "title": "Thanksgiving: Mamo & Grandpa visiting",
+   "detail": "Flight lands 9:52 AM; they're here through Friday."
+  },
   {
    "lead": "Soon",
    "title": "Find a new babysitter",
@@ -62,16 +74,12 @@
  ],
  "COMING_UP": [
   {
-   "lead": "Tue",
-   "title": "3 PM Carmella with Marsha"
-  },
-  {
-   "lead": "Tue",
-   "title": "9:52 AM Mamo & Grandpa arrive (SLC airport)"
-  },
-  {
    "lead": "Thu",
    "title": "Thanksgiving Day with Mamo & Grandpa"
+  },
+  {
+   "lead": "Fri",
+   "title": "8:15 AM Airport drop-off: Mamo & Grandpa"
   }
  ],
  "GUESTS": [
