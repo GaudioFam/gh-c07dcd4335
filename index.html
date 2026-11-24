@@ -111,7 +111,7 @@ function tgRoll(n){
   const html=`<div class="tghead"><h2>${title}</h2><div class="tgwhen">Dinner Thursday 4:00 PM</div></div>${grid}${laterLine}${starter}`;
   if(el.innerHTML!==html||el.style.display!=='block'){el.innerHTML=html;el.style.display='block';fit()}
 }
-function kitchen(n){const el=$('steveEve');if(!el)return;const on=n.h>=18;const lines=(D&&Array.isArray(D.STEVE_EVENING_BANNER)&&D.STEVE_EVENING_BANNER.length)?D.STEVE_EVENING_BANNER:STEVE_EVE_DEFAULT;const msg=lines[((n.wd%lines.length)+lines.length)%lines.length];const next=on?'block':'none';if(el.style.display!==next||(on&&el.textContent!==msg)){el.textContent=on?msg:'';el.style.display=next;if(D)fit()}}
+function kitchen(n){const el=$('steveEve');if(!el)return;const on=n.h>=18&&!(n.iso>='2026-11-22'&&n.iso<='2026-11-29');const lines=(D&&Array.isArray(D.STEVE_EVENING_BANNER)&&D.STEVE_EVENING_BANNER.length)?D.STEVE_EVENING_BANNER:STEVE_EVE_DEFAULT;const msg=lines[((n.wd%lines.length)+lines.length)%lines.length];const next=on?'block':'none';if(el.style.display!==next||(on&&el.textContent!==msg)){el.textContent=on?msg:'';el.style.display=next;if(D)fit()}}
 function hlab(h){const hh=Math.floor(h),m=Math.round((h-hh)*60),ap=hh<12?'AM':'PM',x=hh%12||12;return x+(m?':'+String(m).padStart(2,'0'):'')+' '+ap}
 function emo(t){t=t.toLowerCase();for(const[k,e]of[[/ballet/,'🩰'],[/vet|dog/,'🐶'],[/church|bible/,'⛪'],[/grocery/,'🛒'],[/tire|car\b/,'🚗'],[/date night/,'💕'],[/haircut/,'💈'],[/birthday/,'🎂'],[/steve/,'👨']])if(k.test(t))return e;return'✨'}
 function sky(s){s=s.toLowerCase();return/snow/.test(s)?'🌨️':/rain|shower/.test(s)?'🌧️':/storm/.test(s)?'⛈️':/partly/.test(s)?'⛅':/cloud|overcast/.test(s)?'☁️':'☀️'}
