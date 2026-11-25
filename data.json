@@ -13,13 +13,7 @@
   },
   "DAY_START": 8,
   "DAY_END": 22,
-  "EVENTS": [
-    {
-      "start": 10.33,
-      "end": 12.33,
-      "title": "Bible study"
-    }
-  ],
+  "EVENTS": [],
   "CHECKLISTS": [
     {
       "title": "Today's chores",
@@ -29,17 +23,6 @@
         "Steve: Pulsetto 2x",
         "Feed sourdough",
         "Laundry day"
-      ]
-    },
-    {
-      "title": "Out the door 10:00 AM: Bible study",
-      "items": [
-        "Carmella sits on the potty",
-        "Snacks for Carmella",
-        "Jordan's Bible study notes",
-        "Change of clothes, both girls",
-        "Genevieve's carrier",
-        "Weather-appropriate clothes"
       ]
     }
   ],
