@@ -1,33 +1,23 @@
 {
-  "DATE_ISO": "2026-11-24",
-  "DATE": "Tuesday, November 24",
-  "UPDATED": "Updated Tue Nov 24, 4:45 AM MT",
-  "FUN_NOTE": "🦃 Thanksgiving week: Mamo & Grandpa land today!",
+  "DATE_ISO": "2026-11-25",
+  "DATE": "Wednesday, November 25",
+  "UPDATED": "Updated Wed Nov 25, 4:50 AM MT",
+  "FUN_NOTE": "🥧 Pie-eve: Mamo & Grandpa, ready your forks!",
   "WEATHER": {
-    "high": "47°",
-    "low": "32°",
-    "sky": "Mostly sunny, partly cloudy later",
-    "precip": "3% chance of precip",
-    "wind": "Light, ~1-5 mph",
+    "high": "45°",
+    "low": "36°",
+    "sky": "Overcast, cloudy all day",
+    "precip": "~16% chance of precip",
+    "wind": "Light, ~0-4 mph",
     "dress": "Carmella: warm coat, hat & mittens\nGenevieve: warm footie, hat & blanket on carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 9.87,
-      "end": 10.75,
-      "title": "Mamo & Grandpa arrive (SLC airport)"
-    },
-    {
-      "start": 12.5,
-      "end": 13.5,
-      "title": "Steve busy (work)"
-    },
-    {
-      "start": 15,
-      "end": 17,
-      "title": "Carmella with Marsha"
+      "start": 10.33,
+      "end": 12.33,
+      "title": "Bible study"
     }
   ],
   "CHECKLISTS": [
@@ -37,7 +27,19 @@
         "Probiotics for Jordan & Steve",
         "Steve: 10,000 steps",
         "Steve: Pulsetto 2x",
-        "Feed sourdough"
+        "Feed sourdough",
+        "Laundry day"
+      ]
+    },
+    {
+      "title": "Out the door 10:00 AM: Bible study",
+      "items": [
+        "Carmella sits on the potty",
+        "Snacks for Carmella",
+        "Jordan's Bible study notes",
+        "Change of clothes, both girls",
+        "Genevieve's carrier",
+        "Weather-appropriate clothes"
       ]
     }
   ],
@@ -45,7 +47,7 @@
     {
       "lead": "All day",
       "title": "Thanksgiving: Mamo & Grandpa visiting",
-      "detail": "Flight lands 9:52 AM; they're here through Friday."
+      "detail": "Flight landed Tue 9:52 AM; they're here through Friday."
     },
     {
       "lead": "Soon",
