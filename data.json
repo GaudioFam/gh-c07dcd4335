@@ -1,23 +1,23 @@
 {
-  "DATE_ISO": "2026-11-26",
-  "DATE": "Thursday, November 26",
-  "UPDATED": "Updated Thu Nov 26, 4:45 AM MT",
-  "FUN_NOTE": "🦃 Gobble gobble! Charlie & Asher smell turkey!",
+  "DATE_ISO": "2026-11-27",
+  "DATE": "Friday, November 27",
+  "UPDATED": "Updated Fri Nov 27, 4:45 AM MT",
+  "FUN_NOTE": "🐶 Charlie & Asher say: leftovers, please!",
   "WEATHER": {
-    "high": "47°",
-    "low": "35°",
-    "sky": "Partly cloudy, hazy at times",
+    "high": "54°",
+    "low": "39°",
+    "sky": "Cloudy",
     "precip": "~10% chance of precip",
-    "wind": "Light, ~0-5 mph",
+    "wind": "Light, ~up to 8 mph",
     "dress": "Carmella: warm coat, hat & mittens\nGenevieve: warm footie, hat & blanket on carrier"
   },
   "DAY_START": 8,
   "DAY_END": 22,
   "EVENTS": [
     {
-      "start": 16,
-      "end": 18,
-      "title": "Thanksgiving dinner"
+      "start": 8.25,
+      "end": 9.25,
+      "title": "Airport drop-off: Mamo & Grandpa"
     }
   ],
   "CHECKLISTS": [
@@ -28,17 +28,15 @@
         "Steve: 10,000 steps",
         "Steve: Pulsetto 2x",
         "Feed sourdough",
-        "Strip the sheets",
-        "Set out the laundry",
-        "Pick up the toys"
+        "Place the grocery order"
       ]
     }
   ],
   "TODOS": [
     {
       "lead": "All day",
-      "title": "Thanksgiving: Mamo & Grandpa visiting",
-      "detail": "They're here through Friday."
+      "title": "Mamo & Grandpa visiting",
+      "detail": "They fly home this morning."
     },
     {
       "lead": "Soon",
@@ -58,8 +56,8 @@
   ],
   "COMING_UP": [
     {
-      "lead": "Fri",
-      "title": "8:15 AM Airport drop-off: Mamo & Grandpa"
+      "lead": "Sat",
+      "title": "Nothing planned: a cozy day at home"
     }
   ],
   "GUESTS": [
